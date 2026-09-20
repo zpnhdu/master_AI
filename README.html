@@ -1,0 +1,2546 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\WINDOWS\.trae-cn\extensions\shd101wyy.markdown-preview-enhanced-0.8.24-universal\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-details{margin:0;padding:0;border:none}.markdown-preview .md-toc summary.md-toc-link-wrapper{cursor:pointer;list-style-position:outside}.markdown-preview .md-toc summary.md-toc-link-wrapper::marker{font-size:.85em}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='0']{margin-left:12px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='1']{margin-left:28px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='2']{margin-left:44px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='3']{margin-left:60px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='4']{margin-left:76px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='5']{margin-left:80px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-details{margin:0;padding:0;border:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='0']{padding-left:0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='1']{padding-left:16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='2']{padding-left:32px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='3']{padding-left:48px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='4']{padding-left:64px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='5']{padding-left:80px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script>
+    </head>
+    <body for="html-export">
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="dclaw-dwclaw">dclaw (dwclaw) </h1>
+<h2 id="目录">目录 </h2>
+<ul>
+<li><a href="#%E9%A1%B9%E7%9B%AE%E6%A6%82%E8%BF%B0">项目概述</a></li>
+<li><a href="#%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1">架构设计</a>
+<ul>
+<li><a href="#%E8%AE%BE%E8%AE%A1%E5%93%B2%E5%AD%A6">设计哲学</a></li>
+<li><a href="#%E6%80%BB%E4%BD%93%E6%9E%B6%E6%9E%84">总体架构</a></li>
+<li><a href="#%E5%88%86%E5%B1%82%E6%A8%A1%E5%9E%8B">分层模型</a></li>
+<li><a href="#%E7%BB%84%E4%BB%B6%E4%BE%9D%E8%B5%96%E5%9B%BE">组件依赖图</a></li>
+<li><a href="#%E6%B6%88%E6%81%AF%E6%B5%81%E8%BD%AC%E5%85%A8%E9%93%BE%E8%B7%AF">消息流转全链路</a></li>
+</ul>
+</li>
+<li><a href="#%E6%A0%B8%E5%BF%83%E5%AD%90%E7%B3%BB%E7%BB%9F%E8%AF%A6%E8%A7%A3">核心子系统详解</a>
+<ul>
+<li><a href="#1-%E6%8F%92%E4%BB%B6%E6%B3%A8%E5%86%8C%E7%B3%BB%E7%BB%9F-registry">1. 插件注册系统 (Registry)</a></li>
+<li><a href="#2-%E8%BF%90%E8%A1%8C%E6%97%B6%E7%BB%84%E8%A3%85-runtime-assembly">2. 运行时组装 (Runtime Assembly)</a></li>
+<li><a href="#3-gateway-%E7%BD%91%E5%85%B3%E5%B1%82">3. Gateway 网关层</a></li>
+<li><a href="#4-%E9%80%9A%E9%81%93%E7%B3%BB%E7%BB%9F-channels">4. 通道系统 (Channels)</a></li>
+<li><a href="#5-runner-%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E">5. Runner 执行引擎</a></li>
+<li><a href="#6-agent-%E6%8A%BD%E8%B1%A1%E5%B1%82">6. Agent 抽象层</a></li>
+<li><a href="#7-%E5%AD%98%E5%82%A8%E6%9E%B6%E6%9E%84-session--memory">7. 存储架构 (Session &amp; Memory)</a></li>
+<li><a href="#8-%E6%8A%80%E8%83%BD%E7%B3%BB%E7%BB%9F-skills">8. 技能系统 (Skills)</a></li>
+<li><a href="#9-%E5%B7%A5%E5%85%B7%E7%B3%BB%E7%BB%9F-tools">9. 工具系统 (Tools)</a></li>
+<li><a href="#10-%E5%AF%B9%E8%AF%9D%E7%AE%A1%E7%90%86-conversation">10. 对话管理 (Conversation)</a></li>
+<li><a href="#11-%E5%87%BA%E7%AB%99%E8%B7%AF%E7%94%B1-outbound-router">11. 出站路由 (Outbound Router)</a></li>
+<li><a href="#12-%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E5%BC%95%E6%93%8E-cron">12. 定时任务引擎 (Cron)</a></li>
+<li><a href="#13-admin-%E7%AE%A1%E7%90%86%E7%95%8C%E9%9D%A2">13. Admin 管理界面</a></li>
+<li><a href="#14-a2a-%E5%8D%8F%E8%AE%AE">14. A2A 协议</a></li>
+</ul>
+</li>
+<li><a href="#%E5%85%B3%E9%94%AE%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F">关键设计模式</a>
+<ul>
+<li><a href="#%E5%B9%B6%E5%8F%91%E6%8E%A7%E5%88%B6lane-locker">并发控制：Lane Locker</a></li>
+<li><a href="#%E5%8F%96%E6%B6%88%E8%BF%BD%E8%B8%AAcancel-tracker">取消追踪：Cancel Tracker</a></li>
+<li><a href="#%E4%B8%8A%E4%B8%8B%E6%96%87%E6%B3%A8%E5%85%A5runoption-resolver">上下文注入：RunOption Resolver</a></li>
+<li><a href="#%E4%BC%9A%E8%AF%9D%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%87%8D%E5%86%99conversation-scope">会话作用域重写：Conversation Scope</a></li>
+<li><a href="#%E6%B5%81%E5%BC%8F%E8%81%9A%E5%90%88reply-accumulator">流式聚合：Reply Accumulator</a></li>
+<li><a href="#%E8%B0%83%E8%AF%95%E8%BF%BD%E8%B8%AAdebug-recorder">调试追踪：Debug Recorder</a></li>
+</ul>
+</li>
+<li><a href="#%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B%E8%AF%A6%E8%A7%A3">启动流程详解</a></li>
+<li><a href="#%E6%95%B0%E6%8D%AE%E6%B5%81%E8%AF%A6%E8%A7%A3">数据流详解</a>
+<ul>
+<li><a href="#%E6%B6%88%E6%81%AF%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B">消息处理流程</a></li>
+<li><a href="#%E6%B5%81%E5%BC%8F%E5%93%8D%E5%BA%94%E6%B5%81%E7%A8%8B">流式响应流程</a></li>
+<li><a href="#%E5%B7%A5%E5%85%B7%E8%B0%83%E7%94%A8%E6%B5%81%E7%A8%8B">工具调用流程</a></li>
+<li><a href="#%E6%8A%80%E8%83%BD%E5%8A%A0%E8%BD%BD%E6%B5%81%E7%A8%8B">技能加载流程</a></li>
+</ul>
+</li>
+<li><a href="#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84">项目结构</a></li>
+<li><a href="#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B">快速开始</a></li>
+<li><a href="#%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97">配置指南</a></li>
+<li><a href="#%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E8%80%83">命令行参考</a></li>
+<li><a href="#%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97">插件开发指南</a></li>
+<li><a href="#gateway-api">Gateway API</a></li>
+<li><a href="#%E7%9B%91%E6%8E%A7%E4%B8%8E%E8%B0%83%E8%AF%95">监控与调试</a></li>
+<li><a href="#%E7%A4%BA%E4%BE%8B">示例</a></li>
+<li><a href="#%E8%AE%B8%E5%8F%AF%E8%AF%81">许可证</a></li>
+</ul>
+<hr>
+<h2 id="项目概述">项目概述 </h2>
+<p>dclaw (内部代号 <code>dwclaw</code>) 是 <a href="https://gitlab.dw.group.cn/dw-go/dw-agent">Tencent dw-agent</a> 项目的核心 CLI 运行时组件。它提供了一个<strong>可扩展的 AI Agent 框架</strong>，支持：</p>
+<ul>
+<li>🤖 <strong>多种 AI 模型</strong>：OpenAI 兼容 API、Claude Code、DeepSeek、通义千问、腾讯混元等</li>
+<li>📡 <strong>多渠道接入</strong>：Telegram、标准输入 (stdin)、HTTP Gateway</li>
+<li>💾 <strong>灵活存储</strong>：会话和记忆支持 In-Memory、Redis、SQLite、MySQL、PostgreSQL、ClickHouse、PGVector</li>
+<li>🧩 <strong>插件化架构</strong>：通过匿名导入轻松注入自定义通道、后端、工具和模型</li>
+<li>🛠️ <strong>技能系统</strong>：基于 <a href="http://SKILL.md">SKILL.md</a> 的声明式技能定义和自动加载</li>
+<li>🌐 <strong>浏览器自动化</strong>：内置浏览器控制工具，支持页面交互和截图</li>
+<li>⏰ <strong>定时任务</strong>：支持 Cron 表达式调度 AI 任务</li>
+<li>🎛️ <strong>Admin UI</strong>：内置 Web 管理界面，管理技能、会话、记忆和定时任务</li>
+<li>🔗 <strong>A2A 协议</strong>：Agent-to-Agent 通信协议支持</li>
+</ul>
+<hr>
+<h2 id="架构设计">架构设计 </h2>
+<h3 id="设计哲学">设计哲学 </h3>
+<p>dclaw 的架构围绕四个核心设计原则构建：</p>
+<h4 id="1-插件化注册-plugin-registration">1. 插件化注册 (Plugin Registration) </h4>
+<p>所有组件通过 <code>init()</code> 函数向全局注册表注册，而非硬编码依赖。这使得：</p>
+<ul>
+<li>组件可以按需加载</li>
+<li>下游发行版可以通过匿名导入注入内部插件</li>
+<li>编译时决定可用组件，运行时动态选择</li>
+</ul>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token comment">// 每个插件包在 init() 中注册自己</span>
+<span class="token keyword keyword-func">func</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    registry<span class="token punctuation">.</span><span class="token function">RegisterChannel</span><span class="token punctuation">(</span><span class="token string">"telegram"</span><span class="token punctuation">,</span> newChannel<span class="token punctuation">)</span>
+    registry<span class="token punctuation">.</span><span class="token function">RegisterSessionBackend</span><span class="token punctuation">(</span><span class="token string">"redis"</span><span class="token punctuation">,</span> newRedisSessionBackend<span class="token punctuation">)</span>
+    registry<span class="token punctuation">.</span><span class="token function">RegisterToolProvider</span><span class="token punctuation">(</span><span class="token string">"browser"</span><span class="token punctuation">,</span> newBrowserTools<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="2-配置驱动-configuration-driven">2. 配置驱动 (Configuration-Driven) </h4>
+<p>所有运行时行为由配置决定，支持三层配置来源：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>命令行参数 (最高优先级)
+    ↓ 覆盖
+YAML 配置文件
+    ↓ 覆盖
+环境变量 + 内置默认值 (最低优先级)
+</code></pre><h4 id="3-分层解耦-layered-decoupling">3. 分层解耦 (Layered Decoupling) </h4>
+<p>严格的分层架构，每层只依赖下一层的接口：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>通道层 (Channels)    → 只依赖 GatewayClient 接口
+网关层 (Gateway)     → 只依赖 Runner 接口
+执行层 (Runner)      → 只依赖 Agent 接口
+代理层 (Agent)       → 只依赖 Model 接口
+模型层 (Model)       → 无框架依赖
+</code></pre><h4 id="4-会话隔离-session-isolation">4. 会话隔离 (Session Isolation) </h4>
+<p>每个用户/线程拥有完全独立的对话上下文：</p>
+<ul>
+<li>独立的会话存储键</li>
+<li>独立的作用域索引</li>
+<li>独立的记忆文件</li>
+<li>通过 <code>laneLocker</code> 保证同一会话的串行执行</li>
+</ul>
+<hr>
+<h3 id="总体架构">总体架构 </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>┌─────────────────────────────────────────────────────────────────────────┐
+│                           进程边界 (Process)                              │
+│                                                                         │
+│  ┌────────────┐  ┌────────────┐  ┌────────────┐  ┌──────────────────┐  │
+│  │  stdin     │  │  Telegram  │  │  HTTP API  │  │  A2A Protocol    │  │
+│  │  Channel   │  │  Channel   │  │  Gateway   │  │  Surface         │  │
+│  └─────┬──────┘  └─────┬──────┘  └─────┬──────┘  └────────┬─────────┘  │
+│        │               │               │                   │            │
+│        └───────────────┴───────┬───────┴───────────────────┘            │
+│                                │                                        │
+│                     ┌──────────▼──────────┐                             │
+│                     │   Gateway Server    │                             │
+│                     │  (internal/gateway) │                             │
+│                     │                     │                             │
+│                     │  • 消息验证          │                             │
+│                     │  • 会话 ID 生成      │                             │
+│                     │  • 用户白名单        │                             │
+│                     │  • Mention 检测      │                             │
+│                     │  • 上传管理          │                             │
+│                     │  • 音频转写          │                             │
+│                     │  • 会话串行化        │                             │
+│                     │  • 流式响应 (SSE)    │                             │
+│                     │  • 取消追踪          │                             │
+│                     │  • 调试记录          │                             │
+│                     └──────────┬──────────┘                             │
+│                                │                                        │
+│                     ┌──────────▼──────────┐                             │
+│                     │      Runner         │                             │
+│                     │  (runner.Runner)    │                             │
+│                     │                     │                             │
+│                     │  • 会话管理          │                             │
+│                     │  • 事件流生成        │                             │
+│                     │  • 记忆注入          │                             │
+│                     │  • Ralph Loop       │                             │
+│                     │  • 对话插件          │                             │
+│                     └──────────┬──────────┘                             │
+│                                │                                        │
+│                     ┌──────────▼──────────┐                             │
+│                     │       Agent         │                             │
+│                     │  (agent.Agent)      │                             │
+│                     │                     │                             │
+│                     │  ┌───────────────┐  │                             │
+│                     │  │  LLM Agent    │  │  ┌──────────────────┐      │
+│                     │  │  或           │  │  │    Skill Repo    │      │
+│                     │  │  Claude Code  │  │  │  (技能发现/加载)  │      │
+│                     │  └───────┬───────┘  │  └──────────────────┘      │
+│                     │          │          │                             │
+│                     │  ┌───────▼───────┐  │  ┌──────────────────┐      │
+│                     │  │  Tool Engine  │  │  │   Tool Providers │      │
+│                     │  │  (工具调度)    │  │  │  • exec_command  │      │
+│                     │  └───────┬───────┘  │  │  • browser       │      │
+│                     │          │          │  │  • read_document │      │
+│                     │  ┌───────▼───────┐  │  │  • MCP servers   │      │
+│                     │  │     Model     │  │  │  • DuckDuckGo    │      │
+│                     │  │ (模型调用)     │  │  │  • ...           │      │
+│                     │  └───────────────┘  │  └──────────────────┘      │
+│                     └─────────────────────┘                             │
+│                                │                                        │
+│        ┌───────────────────────┼───────────────────────┐                │
+│        │                       │                       │                │
+│  ┌─────▼─────┐          ┌─────▼─────┐          ┌─────▼─────┐          │
+│  │  Session   │          │  Memory   │          │  Uploads  │          │
+│  │  Service   │          │  Service  │          │  Store    │          │
+│  │            │          │           │          │           │          │
+│  │ inmemory   │          │ file      │          │ 本地文件   │          │
+│  │ redis      │          │ inmemory  │          │           │          │
+│  │ sqlite     │          │ redis     │          │           │          │
+│  │ mysql      │          │ sqlite    │          │           │          │
+│  │ postgres   │          │ sqlitevec │          │           │          │
+│  │ clickhouse │          │ mysql     │          │           │          │
+│  └────────────┘          │ postgres  │          └───────────┘          │
+│                          │ pgvector  │                                 │
+│                          └───────────┘                                 │
+│                                                                        │
+│  ┌──────────────────────────────────────────────────────────────┐     │
+│  │                      Admin Web UI                            │     │
+│  │  技能管理 | 会话管理 | 记忆管理 | 定时任务 | 调试 | 浏览器    │     │
+│  └──────────────────────────────────────────────────────────────┘     │
+│                                                                        │
+│  ┌──────────────────────────────────────────────────────────────┐     │
+│  │                    Cron Service                              │     │
+│  │  定时调度 → 独立 Runner → Outbound Router → Channel          │     │
+│  └──────────────────────────────────────────────────────────────┘     │
+│                                                                        │
+│  ┌──────────────────────────────────────────────────────────────┐     │
+│  │                 Outbound Router                              │     │
+│  │  AI 出站消息 → 路由到对应 Channel → 发送给用户                │     │
+│  └──────────────────────────────────────────────────────────────┘     │
+│                                                                        │
+└─────────────────────────────────────────────────────────────────────────┘
+</code></pre><hr>
+<h3 id="分层模型">分层模型 </h3>
+<p>dclaw 采用严格的六层架构，每层只与相邻层交互：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>┌──────────────────────────────────────────────────────────────┐
+│ Layer 0: CLI Entry (cmd/dclaw/)                           │
+│  • 解析顶层命令 (run, doctor, pairing, inspect, upgrade)      │
+│  • 版本检查、自动更新                                         │
+│  • 委托给 app.Main()                                         │
+└──────────────────────────┬───────────────────────────────────┘
+                           │
+┌──────────────────────────▼───────────────────────────────────┐
+│ Layer 1: App Runtime (app/)                                  │
+│  • 解析配置 (runOptions)                                     │
+│  • 按顺序组装所有组件 (NewRuntime)                            │
+│  • 管理生命周期 (Close)                                       │
+│  • 子命令调度 (doctor, pairing, inspect)                      │
+│  • 运行时 Prompt 控制                                         │
+└──────────────────────────┬───────────────────────────────────┘
+                           │
+┌──────────────────────────▼───────────────────────────────────┐
+│ Layer 2: Gateway (internal/gateway/)                         │
+│  • HTTP 请求 → 标准化消息                                    │
+│  • 会话 ID 生成 (channel:dm:from 或 channel:thread:thread)   │
+│  • 安全策略 (用户白名单、Mention 检测)                        │
+│  • 会话串行化 (laneLocker)                                    │
+│  • 流式响应 (SSE)                                            │
+│  • 请求取消 (cancelTracker)                                   │
+│  • 上传管理、音频转写                                         │
+└──────────────────────────┬───────────────────────────────────┘
+                           │
+┌──────────────────────────▼───────────────────────────────────┐
+│ Layer 3: Runner (runner.Runner)                              │
+│  • 会话生命周期管理                                           │
+│  • 注入上下文 (历史、记忆、技能)                              │
+│  • 调用 Agent.Run() 获取事件流                               │
+│  • Ralph Loop 自验证循环                                     │
+│  • 对话插件钩子                                               │
+└──────────────────────────┬───────────────────────────────────┘
+                           │
+┌──────────────────────────▼───────────────────────────────────┐
+│ Layer 4: Agent (agent.Agent)                                 │
+│  • LLM Agent: 模型调用 + 工具调度 + 技能加载                  │
+│  • Claude Code Agent: 委托 Claude Code 执行                  │
+│  • 工具引擎: 并行/串行工具调用                                │
+│  • 技能仓库: 技能发现、加载、热更新                            │
+└──────────────────────────┬───────────────────────────────────┘
+                           │
+┌──────────────────────────▼───────────────────────────────────┐
+│ Layer 5: Model (model.Model)                                 │
+│  • OpenAI 兼容 API 调用                                       │
+│  • Mock 模型 (测试)                                          │
+│  • 流式/非流式响应                                            │
+│  • Token 用量统计                                             │
+└──────────────────────────────────────────────────────────────┘
+</code></pre><p><strong>层间依赖规则</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>层</th>
+<th>依赖的接口</th>
+<th>不直接依赖</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gateway</td>
+<td><code>runner.Runner</code></td>
+<td>Agent, Model, Session, Memory</td>
+</tr>
+<tr>
+<td>Runner</td>
+<td><code>agent.Agent</code>, <code>session.Service</code></td>
+<td>Model, Channel</td>
+</tr>
+<tr>
+<td>Agent</td>
+<td><code>model.Model</code>, <code>tool.Tool</code></td>
+<td>Gateway, Channel</td>
+</tr>
+<tr>
+<td>Channel</td>
+<td><code>gwclient.GatewayClient</code></td>
+<td>Runner, Agent, Model</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="组件依赖图">组件依赖图 </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>                        ┌─────────────┐
+                        │   main.go   │
+                        └──────┬──────┘
+                               │ imports
+                        ┌──────▼──────┐
+                        │  app.Main() │
+                        └──────┬──────┘
+                               │
+              ┌────────────────┼────────────────┐
+              │                │                │
+     ┌────────▼───────┐ ┌─────▼──────┐ ┌──────▼───────┐
+     │ parseRunOptions│ │  Registry  │ │  Sub-commands│
+     │ (配置解析)      │ │ (插件注册)  │ │ (doctor等)   │
+     └────────┬───────┘ └─────┬──────┘ └──────────────┘
+              │               │
+              │    ┌──────────┼──────────┐
+              │    │          │          │
+              │ ┌──▼──┐ ┌───▼───┐ ┌───▼────┐
+              │ │Model│ │Channel│ │Backend │
+              │ │注册  │ │注册   │ │注册    │
+              │ └─────┘ └───────┘ └────────┘
+              │
+     ┌────────▼──────────────────────────────────────┐
+     │              NewRuntime()                      │
+     │  按顺序组装所有组件：                           │
+     │  1. 解析配置 → 2. 创建 Model                   │
+     │  3. 创建 Session Service                       │
+     │  4. 创建 Memory Service                        │
+     │  5. 创建 Runtime Stores                        │
+     │  6. 构建 dwclaw Tools                          │
+     │  7. 创建 Agent + Skills Repo                   │
+     │  8. 创建 Runner                                │
+     │  9. 创建 Gateway Server                        │
+     │  10. 创建 A2A Surface                          │
+     │  11. 创建 Channels                             │
+     │  12. 创建 Cron Service                         │
+     │  13. 创建 Admin UI                             │
+     └────────┬──────────────────────────────────────┘
+              │
+     ┌────────▼────────┐
+     │    Runtime       │
+     │  ┌────────────┐  │
+     │  │ Gateway    │  │────→ HTTP Handler
+     │  ├────────────┤  │
+     │  │ A2A        │  │────→ A2A Handler
+     │  ├────────────┤  │
+     │  │ Admin      │  │────→ Admin HTTP Handler
+     │  ├────────────┤  │
+     │  │ Channels[] │  │────→ 各通道独立 goroutine
+     │  ├────────────┤  │
+     │  │ Runner     │  │────→ Agent 执行引擎
+     │  ├────────────┤  │
+     │  │ Cron       │  │────→ 定时调度
+     │  └────────────┘  │
+     └──────────────────┘
+</code></pre><hr>
+<h3 id="消息流转全链路">消息流转全链路 </h3>
+<p>一条消息从用户到 AI 回复的完整旅程：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>用户发送消息
+    │
+    ▼
+┌─────────────────────────────────────────────┐
+│ Channel (Telegram / stdin / HTTP)           │
+│ • 接收原始消息                               │
+│ • 提取元数据 (channel, from, thread, text)   │
+│ • 调用 gwClient.SendMessage()               │
+└──────────────────┬──────────────────────────┘
+                   │ HTTP POST /v1/gateway/messages
+                   ▼
+┌─────────────────────────────────────────────┐
+│ Gateway Server                              │
+│                                             │
+│ 1. 解析 JSON 请求体                         │
+│ 2. 验证用户白名单                            │
+│ 3. 检测 Mention (群组场景)                   │
+│ 4. 生成 SessionID: "telegram:dm:123456"     │
+│ 5. 生成 RequestID (UUID)                    │
+│ 6. 处理上传附件 (图片/文档/音频)             │
+│ 7. 音频转写 (如需要)                         │
+│ 8. 构建 InboundMessage                      │
+│ 9. 创建/获取 Debug Trace                    │
+│                                             │
+│ ┌───────────────────────────────────────┐   │
+│ │ laneLocker.withLock(sessionID, ...)   │   │
+│ │  → 同一会话串行执行，避免竞态          │   │
+│ └───────────────────┬───────────────────┘   │
+│                     │                       │
+│                     ▼                       │
+│ ┌───────────────────────────────────────┐   │
+│ │ prepareMessageRun()                   │   │
+│ │  • 构建用户消息 (model.Message)        │   │
+│ │  • 解析系统提示词                      │   │
+│ │  • 处理扩展字段                        │   │
+│ └───────────────────┬───────────────────┘   │
+│                     │                       │
+│                     ▼                       │
+│ ┌───────────────────────────────────────┐   │
+│ │ resolveRunOptions()                   │   │
+│ │  • 注入对话历史 (context messages)     │   │
+│ │  • 注入 Langfuse 追踪                  │   │
+│ │  • 注入投递上下文                      │   │
+│ │  • 注入记忆文件路径                    │   │
+│ └───────────────────┬───────────────────┘   │
+│                     │                       │
+│                     ▼                       │
+│ ┌───────────────────────────────────────┐   │
+│ │ runner.Run(ctx, userID, sessionID,    │   │
+│ │            userMsg, runOpts...)       │   │
+│ │                                       │   │
+│ │  → 返回 event.Event 通道              │   │
+│ └───────────────────┬───────────────────┘   │
+│                     │                       │
+│                     ▼                       │
+│ ┌───────────────────────────────────────┐   │
+│ │ replyAccumulator.Consume(event)       │   │
+│ │  • 聚合流式 delta → 完整文本           │   │
+│ │  • 累积 Token 用量                     │   │
+│ │  • 捕获错误                            │   │
+│ └───────────────────┬───────────────────┘   │
+│                     │                       │
+│                     ▼                       │
+│ 返回 MessageResponse {                      │
+│   reply: "AI 回复内容",                     │
+│   session_id: "telegram:dm:123456",         │
+│   request_id: "uuid-xxx",                   │
+│   usage: { prompt, completion, total }      │
+│ }                                           │
+└──────────────────┬──────────────────────────┘
+                   │
+                   ▼
+┌─────────────────────────────────────────────┐
+│ Channel 发送回复给用户                       │
+│ • Telegram: 流式编辑消息 / 发送新消息        │
+│ • stdin: 打印到 STDOUT                      │
+│ • HTTP: JSON 响应                           │
+└─────────────────────────────────────────────┘
+</code></pre><hr>
+<h2 id="核心子系统详解">核心子系统详解 </h2>
+<h3 id="1-插件注册系统-registry">1. 插件注册系统 (Registry) </h3>
+<p><strong>路径</strong>: <a href="dclaw\registry\registry.go"><code>registry/registry.go</code></a></p>
+<p>Registry 是 dclaw 插件化的核心枢纽。它提供了六种注册表，每种管理一类组件：</p>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token keyword keyword-var">var</span> <span class="token punctuation">(</span>
+    channelFactories  <span class="token operator">=</span> <span class="token keyword keyword-map">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span>ChannelFactory<span class="token punctuation">{</span><span class="token punctuation">}</span>       <span class="token comment">// 通道</span>
+    sessionFactories  <span class="token operator">=</span> <span class="token keyword keyword-map">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span>SessionBackendFactory<span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">// 会话后端</span>
+    memoryFactories   <span class="token operator">=</span> <span class="token keyword keyword-map">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span>MemoryBackendFactory<span class="token punctuation">{</span><span class="token punctuation">}</span>  <span class="token comment">// 记忆后端</span>
+    toolFactories     <span class="token operator">=</span> <span class="token keyword keyword-map">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span>ToolProviderFactory<span class="token punctuation">{</span><span class="token punctuation">}</span>   <span class="token comment">// 工具提供者</span>
+    toolSetFactories  <span class="token operator">=</span> <span class="token keyword keyword-map">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span>ToolSetProviderFactory<span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token comment">// 工具集提供者</span>
+    modelFactories    <span class="token operator">=</span> <span class="token keyword keyword-map">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span>ModelFactory<span class="token punctuation">{</span><span class="token punctuation">}</span>          <span class="token comment">// 模型</span>
+<span class="token punctuation">)</span>
+</code></pre><h4 id="注册流程">注册流程 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>插件包 init()
+    │
+    ▼
+registry.RegisterChannel("telegram", newChannel)
+    │
+    ▼
+检查名称有效性 → 检查是否重复 → 存入 map
+    │
+    ▼
+运行时通过 registry.LookupChannel("telegram") 获取工厂
+</code></pre><h4 id="工厂函数签名">工厂函数签名 </h4>
+<p>每种组件类型有特定的工厂函数签名：</p>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token comment">// 通道工厂：接收依赖和配置，返回 Channel 实例</span>
+<span class="token keyword keyword-type">type</span> ChannelFactory <span class="token keyword keyword-func">func</span><span class="token punctuation">(</span>
+    deps ChannelDeps<span class="token punctuation">,</span>      <span class="token comment">// Gateway 客户端、状态目录、上下文</span>
+    spec PluginSpec<span class="token punctuation">,</span>       <span class="token comment">// 类型、名称、YAML 配置节点</span>
+<span class="token punctuation">)</span> <span class="token punctuation">(</span>channel<span class="token punctuation">.</span>Channel<span class="token punctuation">,</span> <span class="token builtin">error</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 会话后端工厂</span>
+<span class="token keyword keyword-type">type</span> SessionBackendFactory <span class="token keyword keyword-func">func</span><span class="token punctuation">(</span>
+    deps SessionDeps<span class="token punctuation">,</span>      <span class="token comment">// Model、Summarizer、AppName</span>
+    spec SessionBackendSpec<span class="token punctuation">,</span>
+<span class="token punctuation">)</span> <span class="token punctuation">(</span>session<span class="token punctuation">.</span>Service<span class="token punctuation">,</span> <span class="token builtin">error</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 记忆后端工厂</span>
+<span class="token keyword keyword-type">type</span> MemoryBackendFactory <span class="token keyword keyword-func">func</span><span class="token punctuation">(</span>
+    deps MemoryDeps<span class="token punctuation">,</span>       <span class="token comment">// Model、Extractor、AppName</span>
+    spec MemoryBackendSpec<span class="token punctuation">,</span>
+<span class="token punctuation">)</span> <span class="token punctuation">(</span>memory<span class="token punctuation">.</span>Service<span class="token punctuation">,</span> <span class="token builtin">error</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 工具提供者工厂：返回静态工具列表</span>
+<span class="token keyword keyword-type">type</span> ToolProviderFactory <span class="token keyword keyword-func">func</span><span class="token punctuation">(</span>
+    deps ToolProviderDeps<span class="token punctuation">,</span>
+    spec PluginSpec<span class="token punctuation">,</span>
+<span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span>tool<span class="token punctuation">.</span>Tool<span class="token punctuation">,</span> <span class="token builtin">error</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 工具集提供者工厂：返回动态工具集合</span>
+<span class="token keyword keyword-type">type</span> ToolSetProviderFactory <span class="token keyword keyword-func">func</span><span class="token punctuation">(</span>
+    deps ToolSetProviderDeps<span class="token punctuation">,</span>
+    spec PluginSpec<span class="token punctuation">,</span>
+<span class="token punctuation">)</span> <span class="token punctuation">(</span>tool<span class="token punctuation">.</span>ToolSet<span class="token punctuation">,</span> <span class="token builtin">error</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 模型工厂</span>
+<span class="token keyword keyword-type">type</span> ModelFactory <span class="token keyword keyword-func">func</span><span class="token punctuation">(</span>spec ModelSpec<span class="token punctuation">)</span> <span class="token punctuation">(</span>model<span class="token punctuation">.</span>Model<span class="token punctuation">,</span> <span class="token builtin">error</span><span class="token punctuation">)</span>
+</code></pre><h4 id="内置注册项">内置注册项 </h4>
+<p>在 <a href="dclaw\app\builtins.go"><code>app/builtins.go</code></a> 中，所有内置组件通过 <code>init()</code> 注册：</p>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token keyword keyword-func">func</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 模型</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterModel</span><span class="token punctuation">(</span><span class="token string">"mock"</span><span class="token punctuation">,</span> newMockModel<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterModel</span><span class="token punctuation">(</span><span class="token string">"openai"</span><span class="token punctuation">,</span> newOpenAIModel<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token comment">// 会话后端 (6 种)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterSessionBackend</span><span class="token punctuation">(</span><span class="token string">"inmemory"</span><span class="token punctuation">,</span> newInMemorySessionBackend<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterSessionBackend</span><span class="token punctuation">(</span><span class="token string">"redis"</span><span class="token punctuation">,</span> newRedisSessionBackend<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterSessionBackend</span><span class="token punctuation">(</span><span class="token string">"sqlite"</span><span class="token punctuation">,</span> newSQLiteSessionBackend<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterSessionBackend</span><span class="token punctuation">(</span><span class="token string">"mysql"</span><span class="token punctuation">,</span> newMySQLSessionBackend<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterSessionBackend</span><span class="token punctuation">(</span><span class="token string">"postgres"</span><span class="token punctuation">,</span> newPostgresSessionBackend<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterSessionBackend</span><span class="token punctuation">(</span><span class="token string">"clickhouse"</span><span class="token punctuation">,</span> newClickHouseSessionBackend<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token comment">// 记忆后端 (8 种)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterMemoryBackend</span><span class="token punctuation">(</span><span class="token string">"file"</span><span class="token punctuation">,</span> newDisabledMemoryBackend<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterMemoryBackend</span><span class="token punctuation">(</span><span class="token string">"inmemory"</span><span class="token punctuation">,</span> newInMemoryMemoryBackend<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterMemoryBackend</span><span class="token punctuation">(</span><span class="token string">"redis"</span><span class="token punctuation">,</span> newRedisMemoryBackend<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterMemoryBackend</span><span class="token punctuation">(</span><span class="token string">"sqlite"</span><span class="token punctuation">,</span> newSQLiteMemoryBackend<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterMemoryBackend</span><span class="token punctuation">(</span><span class="token string">"sqlitevec"</span><span class="token punctuation">,</span> newSQLiteVecMemoryBackend<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterMemoryBackend</span><span class="token punctuation">(</span><span class="token string">"mysql"</span><span class="token punctuation">,</span> newMySQLMemoryBackend<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterMemoryBackend</span><span class="token punctuation">(</span><span class="token string">"postgres"</span><span class="token punctuation">,</span> newPostgresMemoryBackend<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterMemoryBackend</span><span class="token punctuation">(</span><span class="token string">"pgvector"</span><span class="token punctuation">,</span> newPGVectorMemoryBackend<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre><p>在 <a href="dclaw/app/tooling_builtins.go"><code>app/tooling_builtins.go</code></a> 中注册工具：</p>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token keyword keyword-func">func</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 工具提供者 (Tool Provider)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterToolProvider</span><span class="token punctuation">(</span><span class="token string">"browser"</span><span class="token punctuation">,</span> newBrowserTools<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterToolProvider</span><span class="token punctuation">(</span><span class="token string">"duckduckgo"</span><span class="token punctuation">,</span> newDuckDuckGoTools<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterToolProvider</span><span class="token punctuation">(</span><span class="token string">"webfetch_http"</span><span class="token punctuation">,</span> newHTTPWebFetchTools<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token comment">// 工具集提供者 (ToolSet Provider)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterToolSetProvider</span><span class="token punctuation">(</span><span class="token string">"mcp"</span><span class="token punctuation">,</span> newMCPToolSet<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterToolSetProvider</span><span class="token punctuation">(</span><span class="token string">"file"</span><span class="token punctuation">,</span> newFileToolSet<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterToolSetProvider</span><span class="token punctuation">(</span><span class="token string">"openapi"</span><span class="token punctuation">,</span> newOpenAPIToolSet<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterToolSetProvider</span><span class="token punctuation">(</span><span class="token string">"google"</span><span class="token punctuation">,</span> newGoogleToolSet<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterToolSetProvider</span><span class="token punctuation">(</span><span class="token string">"wikipedia"</span><span class="token punctuation">,</span> newWikipediaToolSet<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterToolSetProvider</span><span class="token punctuation">(</span><span class="token string">"arxivsearch"</span><span class="token punctuation">,</span> newArxivToolSet<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">must</span><span class="token punctuation">(</span>registry<span class="token punctuation">.</span><span class="token function">RegisterToolSetProvider</span><span class="token punctuation">(</span><span class="token string">"email"</span><span class="token punctuation">,</span> newEmailToolSet<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="设计亮点">设计亮点 </h4>
+<ul>
+<li><strong>严格解码</strong>：使用 <code>registry.DecodeStrict()</code> 解析 YAML 配置，拒绝未知字段，防止配置错误</li>
+<li><strong>线程安全</strong>：所有注册表使用 <code>sync.RWMutex</code> 保护</li>
+<li><strong>类型归一化</strong>：类型名称统一转小写，避免大小写敏感问题</li>
+<li><strong>防重复注册</strong>：重复注册会 panic，确保编译期发现问题</li>
+</ul>
+<hr>
+<h3 id="2-运行时组装-runtime-assembly">2. 运行时组装 (Runtime Assembly) </h3>
+<p><strong>路径</strong>: <a href="dclaw/app/app.go"><code>app/app.go</code></a></p>
+<p><code>Runtime</code> 结构体是 dclaw 运行时的核心容器，持有所有组件的引用：</p>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token keyword keyword-type">type</span> Runtime <span class="token keyword keyword-struct">struct</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 对外暴露的表面层</span>
+    Gateway  Gateway           <span class="token comment">// HTTP Gateway Handler</span>
+    A2A      A2ASurface        <span class="token comment">// A2A 协议 Handler</span>
+    Admin    AdminSurface      <span class="token comment">// Admin UI Handler</span>
+    Channels <span class="token punctuation">[</span><span class="token punctuation">]</span>channel<span class="token punctuation">.</span>Channel <span class="token comment">// 已激活的通道列表</span>
+
+    <span class="token comment">// 内部控制组件</span>
+    prompts  <span class="token operator">*</span>RuntimePromptController  <span class="token comment">// 运行时 Prompt 热更新</span>
+    adminCfg <span class="token operator">*</span>admin<span class="token punctuation">.</span>Config             <span class="token comment">// Admin 配置</span>
+    appName  <span class="token builtin">string</span>                    <span class="token comment">// 应用名称</span>
+    session  session<span class="token punctuation">.</span>Service           <span class="token comment">// 会话服务</span>
+
+    <span class="token comment">// 生命周期管理</span>
+    runner            runner<span class="token punctuation">.</span>Runner
+    cronRunner        closeFunc
+    sessionSvc        closeFunc
+    memorySvc         closeFunc
+    cronSvc           closeFunc
+    skillsWatch       closeFunc
+    toolSets          <span class="token punctuation">[</span><span class="token punctuation">]</span>tool<span class="token punctuation">.</span>ToolSet
+    telemetryShutdown <span class="token keyword keyword-func">func</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span>Context<span class="token punctuation">)</span> <span class="token builtin">error</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="newruntime-组装顺序">NewRuntime() 组装顺序 </h4>
+<p><code>NewRuntime()</code> 函数按照严格的依赖顺序组装所有组件：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>1. parseRunOptions(args)          ← 解析配置
+2. normalizeAgentType()           ← 标准化 Agent 类型
+3. resolveStateDir()              ← 解析状态目录
+4. maybeEnableDebugRecorder()     ← 启用调试记录器
+5. maybeEnableLangfuse()          ← 启用 Langfuse 追踪
+6. modelFromOptions()             ← 创建 Model (如果需要)
+7. newSessionService()            ← 创建会话服务
+8. newMemoryService()             ← 创建记忆服务
+9. newRuntimeStores()             ← 创建运行时存储 (上传、Persona、记忆文件)
+10. resolveAgentPrompts()         ← 解析 Agent 提示词
+11. builddwclawTools()            ← 构建内置工具集
+12. newAgent()                    ← 创建 Agent + 技能仓库
+13. newSkillsWatchService()       ← 创建技能热更新监听
+14. runner.NewRunner()            ← 创建 Runner
+15. gateway.New()                 ← 创建 Gateway Server
+16. newA2ASurface()               ← 创建 A2A 表面层
+17. channelsFromRegistry()        ← 从注册表创建通道
+18. cron.NewService()             ← 创建定时任务服务
+19. buildAdminConfig()            ← 构建 Admin UI
+</code></pre><p><strong>关键设计</strong>：每个步骤失败时，通过 <code>defer cleanup.Close()</code> 确保已创建的资源被正确释放。</p>
+<h4 id="runtime-生命周期">Runtime 生命周期 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>NewRuntime()
+    │
+    ├── 成功 → 返回 *Runtime
+    │              │
+    │              ├── Gateway.Handler  → 挂载到 HTTP 服务器
+    │              ├── A2A.Handler      → 挂载到 HTTP 服务器
+    │              ├── Admin.Handler    → 挂载到独立 HTTP 服务器
+    │              └── Channels[].Run() → 各通道在独立 goroutine 中运行
+    │
+    └── 失败 → cleanup.Close() → 释放所有已创建资源
+</code></pre><h4 id="runtimepromptcontroller">RuntimePromptController </h4>
+<p>支持运行时热更新 Agent 的 Instruction 和 System Prompt：</p>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token keyword keyword-type">type</span> RuntimePromptController <span class="token keyword keyword-struct">struct</span> <span class="token punctuation">{</span>
+    agent    agent<span class="token punctuation">.</span>Agent
+    mu       sync<span class="token punctuation">.</span>RWMutex
+    snapshot PromptSnapshot  <span class="token comment">// 当前 Prompt 快照</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-func">func</span> <span class="token punctuation">(</span>c <span class="token operator">*</span>RuntimePromptController<span class="token punctuation">)</span> <span class="token function">SetInstruction</span><span class="token punctuation">(</span>instruction <span class="token builtin">string</span><span class="token punctuation">)</span>
+<span class="token keyword keyword-func">func</span> <span class="token punctuation">(</span>c <span class="token operator">*</span>RuntimePromptController<span class="token punctuation">)</span> <span class="token function">SetSystemPrompt</span><span class="token punctuation">(</span>systemPrompt <span class="token builtin">string</span><span class="token punctuation">)</span>
+<span class="token keyword keyword-func">func</span> <span class="token punctuation">(</span>c <span class="token operator">*</span>RuntimePromptController<span class="token punctuation">)</span> <span class="token function">SetPrompts</span><span class="token punctuation">(</span>instruction<span class="token punctuation">,</span> systemPrompt <span class="token builtin">string</span><span class="token punctuation">)</span>
+<span class="token keyword keyword-func">func</span> <span class="token punctuation">(</span>c <span class="token operator">*</span>RuntimePromptController<span class="token punctuation">)</span> <span class="token function">Snapshot</span><span class="token punctuation">(</span><span class="token punctuation">)</span> PromptSnapshot
+</code></pre><p>Admin UI 通过此接口实现 Prompt 的在线编辑。</p>
+<hr>
+<h3 id="3-gateway-网关层">3. Gateway 网关层 </h3>
+<p><strong>路径</strong>: <a href="dclaw/internal/gateway/"><code>internal/gateway/</code></a></p>
+<p>Gateway 是 dclaw 的 HTTP API 层，也是所有外部消息的统一入口。</p>
+<h4 id="核心职责">核心职责 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>┌──────────────────────────────────────────────────────────┐
+│                    Gateway Server                         │
+│                                                          │
+│  ┌────────────┐  ┌────────────┐  ┌───────────────────┐  │
+│  │ HTTP 路由   │  │ 安全策略   │  │ 会话管理           │  │
+│  │            │  │            │  │                    │  │
+│  │ /healthz   │  │ 用户白名单  │  │ SessionID 生成     │  │
+│  │ /messages  │  │ Mention检测│  │ laneLocker 串行化  │  │
+│  │ /stream    │  │ 请求体限制  │  │ cancelTracker      │  │
+│  │ /status    │  │ 速率控制    │  │                    │  │
+│  │ /cancel    │  │            │  │                    │  │
+│  └────────────┘  └────────────┘  └───────────────────┘  │
+│                                                          │
+│  ┌────────────┐  ┌────────────┐  ┌───────────────────┐  │
+│  │ 消息预处理  │  │ 流式响应   │  │ 调试与追踪         │  │
+│  │            │  │            │  │                    │  │
+│  │ 上传解析    │  │ SSE 事件流  │  │ DebugRecorder      │  │
+│  │ 音频转写    │  │ 进度推送    │  │ Langfuse 集成      │  │
+│  │ Persona注入 │  │ 工具状态    │  │ 请求/响应记录      │  │
+│  │ 记忆文件    │  │ 增量聚合    │  │                    │  │
+│  └────────────┘  └────────────┘  └───────────────────┘  │
+└──────────────────────────────────────────────────────────┘
+</code></pre><h4 id="端点设计">端点设计 </h4>
+<table>
+<thead>
+<tr>
+<th>端点</th>
+<th>方法</th>
+<th>职责</th>
+<th>实现文件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/healthz</code></td>
+<td>GET</td>
+<td>健康检查</td>
+<td><a href="dclaw/internal/gateway/server.go"><code>server.go</code></a></td>
+</tr>
+<tr>
+<td><code>/v1/gateway/messages</code></td>
+<td>POST</td>
+<td>发送消息（非流式）</td>
+<td><a href="dclaw/internal/gateway/server.go"><code>server.go</code></a></td>
+</tr>
+<tr>
+<td><code>/v1/gateway/messages/stream</code></td>
+<td>POST</td>
+<td>发送消息（SSE 流式）</td>
+<td><a href="dclaw/internal/gateway/stream.go"><code>stream.go</code></a></td>
+</tr>
+<tr>
+<td><code>/v1/gateway/status</code></td>
+<td>GET</td>
+<td>查询请求状态</td>
+<td><a href="dclaw/internal/gateway/server.go"><code>server.go</code></a></td>
+</tr>
+<tr>
+<td><code>/v1/gateway/cancel</code></td>
+<td>POST</td>
+<td>取消正在执行的请求</td>
+<td><a href="dclaw/internal/gateway/server.go"><code>server.go</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="sessionid-生成策略">SessionID 生成策略 </h4>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token comment">// 格式: "&lt;channel&gt;:&lt;kind&gt;:&lt;identifier&gt;"</span>
+<span class="token comment">// DM:  "telegram:dm:123456"</span>
+<span class="token comment">// 群组: "telegram:thread:group_chat_id"</span>
+<span class="token keyword keyword-func">func</span> <span class="token function">DefaultSessionID</span><span class="token punctuation">(</span>msg InboundMessage<span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token builtin">string</span><span class="token punctuation">,</span> <span class="token builtin">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-if">if</span> thread <span class="token operator">!=</span> <span class="token string">""</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-return">return</span> fmt<span class="token punctuation">.</span><span class="token function">Sprintf</span><span class="token punctuation">(</span><span class="token string">"%s:thread:%s"</span><span class="token punctuation">,</span> channel<span class="token punctuation">,</span> thread<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token boolean">nil</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword keyword-return">return</span> fmt<span class="token punctuation">.</span><span class="token function">Sprintf</span><span class="token punctuation">(</span><span class="token string">"%s:dm:%s"</span><span class="token punctuation">,</span> channel<span class="token punctuation">,</span> from<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token boolean">nil</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="消息处理管线">消息处理管线 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>HTTP Request
+    │
+    ▼
+1. decodeJSON()          ← 限制请求体大小 (默认 1MB)
+    │
+    ▼
+2. isUserAllowed()       ← 检查用户白名单
+    │
+    ▼
+3. requireMention()      ← 群组消息是否需要 @mention
+    │
+    ▼
+4. DefaultSessionID()    ← 生成会话 ID
+    │
+    ▼
+5. prepareMessageRun()   ← 构建 preparedMessageRun
+    │   • 解析上传附件
+    │   • 音频转写
+    │   • 构建用户消息
+    │   • 处理 Persona
+    │   • 处理记忆文件
+    │
+    ▼
+6. resolveRunOptions()   ← 注入运行时上下文
+    │   • 对话历史注入
+    │   • Langfuse 追踪注入
+    │   • 投递上下文注入
+    │
+    ▼
+7. lanes.withLock()      ← 会话级互斥锁
+    │
+    ▼
+8. runner.Run()          ← 调用 Runner 执行
+    │   → 返回 &lt;-chan *event.Event
+    │
+    ▼
+9. replyAccumulator      ← 聚合事件为最终回复
+    │   • 聚合流式 delta
+    │   • 累积 Token 用量
+    │
+    ▼
+10. MessageResponse      ← 返回 JSON 响应
+</code></pre><h4 id="流式响应架构">流式响应架构 </h4>
+<p>流式响应通过 SSE (Server-Sent Events) 实现，事件类型包括：</p>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token keyword keyword-type">type</span> StreamEventType <span class="token builtin">string</span>
+
+<span class="token keyword keyword-const">const</span> <span class="token punctuation">(</span>
+    StreamEventTypeRunStarted    <span class="token operator">=</span> <span class="token string">"run_started"</span>     <span class="token comment">// 运行开始</span>
+    StreamEventTypeRunCompleted  <span class="token operator">=</span> <span class="token string">"run_completed"</span>   <span class="token comment">// 运行完成</span>
+    StreamEventTypeRunIgnored    <span class="token operator">=</span> <span class="token string">"run_ignored"</span>     <span class="token comment">// 消息被忽略</span>
+    StreamEventTypeRunError      <span class="token operator">=</span> <span class="token string">"run_error"</span>       <span class="token comment">// 运行错误</span>
+    StreamEventTypePublicDelta   <span class="token operator">=</span> <span class="token string">"public_delta"</span>    <span class="token comment">// 可见文本增量</span>
+    StreamEventTypeThoughtDelta  <span class="token operator">=</span> <span class="token string">"thought_delta"</span>   <span class="token comment">// 思考过程增量</span>
+    StreamEventTypeProgress      <span class="token operator">=</span> <span class="token string">"progress"</span>        <span class="token comment">// 进度更新</span>
+<span class="token punctuation">)</span>
+</code></pre><p><strong>进度状态机</strong>：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>preparing → reading_doc → running_tool → answering → completed
+    │            │             │              │
+    │            ▼             ▼              │
+    │      "Reading      "Running local      │
+    │      document"      tool"              │
+    │                                       │
+    └───────────────────────────────────────┘
+</code></pre><h4 id="in-process-gateway-client">In-Process Gateway Client </h4>
+<p>通道不通过网络调用 Gateway，而是通过 <code>gwclient</code> 包进行<strong>进程内调用</strong>：</p>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token comment">// gwclient 直接调用 Gateway.Handler，无需网络开销</span>
+<span class="token keyword keyword-type">type</span> Client <span class="token keyword keyword-struct">struct</span> <span class="token punctuation">{</span>
+    handler      http<span class="token punctuation">.</span>Handler  <span class="token comment">// Gateway 的 http.Handler</span>
+    messagesPath <span class="token builtin">string</span>
+    streamPath   <span class="token builtin">string</span>
+    cancelPath   <span class="token builtin">string</span>
+<span class="token punctuation">}</span>
+</code></pre><p>这种设计使得：</p>
+<ul>
+<li>通道和 Gateway 在同一进程内通信，零网络延迟</li>
+<li>仍然使用 HTTP 语义（方法、路径、JSON），保持接口一致性</li>
+<li>方便测试和调试</li>
+</ul>
+<hr>
+<h3 id="4-通道系统-channels">4. 通道系统 (Channels) </h3>
+<p><strong>路径</strong>: <a href="dclaw/plugins/"><code>plugins/</code></a>, <a href="dclaw/internal/channel/"><code>internal/channel/</code></a></p>
+<p>通道是 dclaw 与外部世界的通信桥梁。每个通道实现统一的接口：</p>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token keyword keyword-type">type</span> Channel <span class="token keyword keyword-interface">interface</span> <span class="token punctuation">{</span>
+    <span class="token function">ID</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">string</span>                    <span class="token comment">// 通道唯一标识</span>
+    <span class="token function">Run</span><span class="token punctuation">(</span>ctx context<span class="token punctuation">.</span>Context<span class="token punctuation">)</span> <span class="token builtin">error</span> <span class="token comment">// 运行通道（阻塞直到退出）</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="通道接口扩展">通道接口扩展 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Channel (基础接口)
+    │
+    ├── TextSender        ← 支持发送文本消息
+    │   SendText(ctx, target, text) error
+    │
+    └── MessageSender     ← 支持发送富媒体消息
+        SendMessage(ctx, target, text, files, opts) error
+</code></pre><h4 id="通道与-gateway-的关系">通道与 Gateway 的关系 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>┌──────────────┐     gwclient.SendMessage()     ┌──────────────┐
+│   Channel    │ ──────────────────────────────→ │   Gateway    │
+│              │                                 │   Server     │
+│  接收外部消息 │ ←────────────────────────────── │  返回 AI 回复 │
+│  发送回复     │     MessageResponse             │              │
+└──────────────┘                                 └──────────────┘
+</code></pre><p><strong>关键设计</strong>：通道通过 <code>gwclient</code> (进程内客户端) 调用 Gateway，而非直接依赖 Runner 或 Agent。这实现了通道与核心逻辑的完全解耦。</p>
+<h4 id="stdin-通道">stdin 通道 </h4>
+<p><strong>路径</strong>: <a href="dclaw/plugins/stdin/stdin.go"><code>plugins/stdin/stdin.go</code></a></p>
+<p>最简单的通道，适合本地开发和测试：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>STDIN 输入
+    │
+    ▼
+bufio.Scanner (最大 1MB/行)
+    │
+    ▼
+检查 /exit 或 /quit
+    │
+    ▼
+gwClient.SendMessage()
+    │
+    ▼
+打印回复到 STDOUT
+</code></pre><h4 id="telegram-通道">Telegram 通道 </h4>
+<p><strong>路径</strong>: <a href="dclaw/plugins/telegram/telegram.go"><code>plugins/telegram/telegram.go</code></a>, <a href="dclaw/internal/channel/telegram/"><code>internal/channel/telegram/</code></a></p>
+<p>功能最完整的通道，架构如下：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>┌──────────────────────────────────────────────────────────┐
+│                  Telegram Channel                         │
+│                                                          │
+│  ┌────────────┐  ┌────────────┐  ┌───────────────────┐  │
+│  │ Long Poll  │  │ 消息分发   │  │ 流式响应           │  │
+│  │            │  │            │  │                    │  │
+│  │ getUpdates │  │ DM 处理    │  │ 编辑消息更新        │  │
+│  │ 25s 超时   │  │ 群组处理   │  │ 进度推送            │  │
+│  │ offset追踪 │  │ Mention检测│  │ 最终回复            │  │
+│  └────────────┘  └────────────┘  └───────────────────┘  │
+│                                                          │
+│  ┌────────────┐  ┌────────────┐  ┌───────────────────┐  │
+│  │ 媒体处理    │  │ 会话管理   │  │ 配对机制           │  │
+│  │            │  │            │  │                    │  │
+│  │ 图片/文档   │  │ DM 隔离    │  │ 待批准列表          │  │
+│  │ 语音转写    │  │ 群组线程   │  │ 管理员批准          │  │
+│  │ 视频笔记    │  │ 自动重置   │  │ TTL 过期            │  │
+│  │ 下载限制    │  │ 阻塞清理   │  │ pairing 命令        │  │
+│  └────────────┘  └────────────┘  └───────────────────┘  │
+└──────────────────────────────────────────────────────────┘
+</code></pre><p><strong>Telegram 消息处理流程</strong>：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Telegram Bot API (getUpdates)
+    │
+    ▼
+1. 检查用户白名单 / 配对状态
+    │
+    ▼
+2. 判断 DM 或群组
+    │
+    ├── DM: 应用 dm_policy (allow/deny/pairing)
+    │
+    └── 群组: 检查 @mention 或 group_policy
+    │
+    ▼
+3. 处理附件
+    │
+    ├── 图片: 下载 → 转为 base64 → 附加到消息
+    ├── 文档: 下载 → 检查大小限制 → 附加到消息
+    ├── 语音: 下载 → 转写为文本 → 附加到消息
+    └── 视频笔记: 下载 → 转写 → 附加到消息
+    │
+    ▼
+4. gwClient.SendMessage()
+    │
+    ▼
+5. 流式响应
+    │
+    ├── streaming=progress: 实时编辑消息显示进度
+    ├── streaming=final: 等待完成后发送最终回复
+    └── streaming=off: 不发送流式更新
+    │
+    ▼
+6. 发送最终回复 (支持 as_voice、媒体附件)
+</code></pre><hr>
+<h3 id="5-runner-执行引擎">5. Runner 执行引擎 </h3>
+<p>Runner 是 Gateway 和 Agent 之间的中间层，负责：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>┌──────────────────────────────────────────────────────────┐
+│                    Runner                                 │
+│                                                          │
+│  输入: (userID, sessionID, userMessage, runOptions)      │
+│  输出: &lt;-chan *event.Event                               │
+│                                                          │
+│  职责:                                                    │
+│  • 会话生命周期管理 (创建/获取/更新)                      │
+│  • 上下文注入 (历史、记忆、技能)                          │
+│  • 调用 Agent.Run() 获取事件流                           │
+│  • 事件持久化到会话                                       │
+│  • Ralph Loop 自验证循环                                 │
+│  • 对话插件钩子                                           │
+│  • 记忆服务集成                                           │
+└──────────────────────────────────────────────────────────┘
+</code></pre><h4 id="runner-执行流程">Runner 执行流程 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>runner.Run(ctx, userID, sessionID, userMsg, runOpts...)
+    │
+    ▼
+1. 获取或创建 Session
+    │   • 通过 conversationscope 重写存储键
+    │   • 加载会话摘要 (如果启用)
+    │
+    ▼
+2. 构建注入上下文
+    │   • 从会话事件构建对话历史
+    │   • 注入记忆内容
+    │   • 注入技能列表
+    │
+    ▼
+3. 调用 agent.Run(ctx, userMsg, runOpts...)
+    │   → 返回 &lt;-chan *event.Event
+    │
+    ▼
+4. 事件流处理
+    │   • 每个事件持久化到 Session
+    │   • 事件通过通道返回给 Gateway
+    │   • 对话插件钩子 (before/after)
+    │
+    ▼
+5. Runner.Close() → 释放资源
+</code></pre><h4 id="ralph-loop-自验证循环">Ralph Loop 自验证循环 </h4>
+<p>Ralph Loop 是一种自验证机制，Agent 在执行完任务后可以自动验证结果：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Agent 执行任务
+    │
+    ▼
+生成 completion_promise 标签
+    │
+    ▼
+提取验证命令
+    │
+    ▼
+在独立工作目录执行验证
+    │
+    ├── 验证通过 → 返回最终结果
+    │
+    └── 验证失败 → 返回错误信息 → Agent 重试
+        │
+        └── 最多 N 次迭代 (max_iterations)
+</code></pre><p>配置：</p>
+<pre data-role="codeBlock" data-info="yaml" class="language-yaml yaml"><code><span class="token key atrule">agent</span><span class="token punctuation">:</span>
+  <span class="token key atrule">ralph_loop</span><span class="token punctuation">:</span>
+    <span class="token key atrule">enabled</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">max_iterations</span><span class="token punctuation">:</span> <span class="token number">3</span>
+    <span class="token key atrule">completion_promise</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">promise_tag_open</span><span class="token punctuation">:</span> <span class="token string">"&lt;promise&gt;"</span>
+    <span class="token key atrule">promise_tag_close</span><span class="token punctuation">:</span> <span class="token string">"&lt;/promise&gt;"</span>
+    <span class="token key atrule">verify_command</span><span class="token punctuation">:</span> <span class="token string">"go test ./..."</span>
+    <span class="token key atrule">verify_workdir</span><span class="token punctuation">:</span> <span class="token string">"/tmp/verify"</span>
+    <span class="token key atrule">verify_timeout</span><span class="token punctuation">:</span> <span class="token string">"60s"</span>
+    <span class="token key atrule">verify_env</span><span class="token punctuation">:</span> <span class="token string">"GO_ENV=test"</span>
+</code></pre><hr>
+<h3 id="6-agent-抽象层">6. Agent 抽象层 </h3>
+<p>Agent 是 AI 逻辑的核心封装，定义了 <code>agent.Agent</code> 接口：</p>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token keyword keyword-type">type</span> Agent <span class="token keyword keyword-interface">interface</span> <span class="token punctuation">{</span>
+    <span class="token function">Run</span><span class="token punctuation">(</span>ctx context<span class="token punctuation">.</span>Context<span class="token punctuation">,</span> userMsg model<span class="token punctuation">.</span>Message<span class="token punctuation">,</span> opts <span class="token operator">...</span>RunOption<span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token operator">&lt;-</span><span class="token keyword keyword-chan">chan</span> <span class="token operator">*</span>event<span class="token punctuation">.</span>Event<span class="token punctuation">,</span> <span class="token builtin">error</span><span class="token punctuation">)</span>
+    <span class="token function">Close</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">error</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="两种-agent-实现">两种 Agent 实现 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>agent.Agent (接口)
+    │
+    ├── llmagent.LLMAgent
+    │   • 基于 LLM 的 Agent
+    │   • 支持系统提示词 + 指令分离
+    │   • 工具调用引擎 (并行/串行)
+    │   • 技能仓库集成
+    │   • 对话历史注入
+    │   • 记忆注入
+    │   • 运行时 Prompt 热更新
+    │
+    └── claudecode.ClaudeCodeAgent
+        • 委托 Claude Code CLI 执行
+        • 不支持 Agent Prompts
+        • 不支持技能系统
+        • 专注于代码任务
+</code></pre><h4 id="llm-agent-内部架构">LLM Agent 内部架构 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>┌──────────────────────────────────────────────────────────┐
+│                    LLMAgent                               │
+│                                                          │
+│  ┌────────────────────────────────────────────────────┐  │
+│  │              System Prompt 构建                     │  │
+│  │  • Agent Instruction (可热更新)                     │  │
+│  │  • 技能指导 (dwclawSkillsGuidance)                  │  │
+│  │  • 工具指导 (dwclawToolingGuidance)                 │  │
+│  │  • 浏览器指导 (browserToolingGuidance)              │  │
+│  │  • 记忆文件指导                                     │  │
+│  └────────────────────────────────────────────────────┘  │
+│                                                          │
+│  ┌────────────────────────────────────────────────────┐  │
+│  │              工具引擎                               │  │
+│  │  • 内置工具 (exec, read_doc, conversation_history)  │  │
+│  │  • 技能工具 (skill_load, skill_list)                │  │
+│  │  • 浏览器工具 (browser_*)                           │  │
+│  │  • MCP 工具集 (动态加载)                            │  │
+│  │  • 第三方工具 (DuckDuckGo, Google, Wikipedia)       │  │
+│  │  • 自定义工具 (通过 ToolProvider 注册)              │  │
+│  │  • 并行工具执行 (enable_parallel_tools)             │  │
+│  └────────────────────────────────────────────────────┘  │
+│                                                          │
+│  ┌────────────────────────────────────────────────────┐  │
+│  │              技能集成                               │  │
+│  │  • 技能仓库扫描 (skills dirs)                       │  │
+│  │  • SKILL.md 解析 (frontmatter + body)              │  │
+│  │  • 技能列表工具 (skill_list)                        │  │
+│  │  • 技能加载工具 (skill_load)                        │  │
+│  │  • 热更新监听 (skills watch)                        │  │
+│  │  • 技能配置 (API keys, env vars)                   │  │
+│  └────────────────────────────────────────────────────┘  │
+└──────────────────────────────────────────────────────────┘
+</code></pre><hr>
+<h3 id="7-存储架构-session--memory">7. 存储架构 (Session &amp; Memory) </h3>
+<p>dclaw 的存储系统分为两个独立维度：<strong>会话 (Session)</strong> 和 <strong>记忆 (Memory)</strong>。</p>
+<h4 id="架构概览">架构概览 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>┌──────────────────────────────────────────────────────────┐
+│                    Storage Layer                          │
+│                                                          │
+│  ┌────────────────────┐    ┌──────────────────────────┐  │
+│  │  Session Service    │    │  Memory Service           │  │
+│  │                     │    │                          │  │
+│  │  存储对话历史和事件  │    │  存储长期记忆和事实       │  │
+│  │  管理会话生命周期    │    │  支持语义搜索             │  │
+│  │  生成会话摘要        │    │  记忆提取和注入           │  │
+│  │                     │    │                          │  │
+│  │  后端:              │    │  后端:                    │  │
+│  │  • inmemory         │    │  • file (MEMORY.md)      │  │
+│  │  • redis            │    │  • inmemory               │  │
+│  │  • sqlite           │    │  • redis                  │  │
+│  │  • mysql            │    │  • sqlite                 │  │
+│  │  • postgres         │    │  • sqlitevec (向量搜索)   │  │
+│  │  • clickhouse       │    │  • mysql                  │  │
+│  │                     │    │  • postgres               │  │
+│  │  Key:               │    │  • pgvector               │  │
+│  │  {app}:{user}       │    │                          │  │
+│  └────────────────────┘    │  Scope:                   │  │
+│                            │  • 全局                    │  │
+│                            │  • 用户级                  │  │
+│                            │  • 会话级                  │  │
+│                            └──────────────────────────┘  │
+└──────────────────────────────────────────────────────────┘
+</code></pre><h4 id="session-数据模型">Session 数据模型 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Session {
+    Key: {AppName, UserID}
+    Events: []Event {
+        • 用户消息
+        • AI 回复
+        • 工具调用
+        • 工具结果
+        • 错误
+    }
+    State: StateMap {
+        • 会话摘要文本
+        • 摘要更新时间
+        • 自定义状态
+    }
+    CreatedAt: time.Time
+    UpdatedAt: time.Time
+}
+</code></pre><h4 id="会话摘要机制">会话摘要机制 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>事件数达到 threshold (默认 20)
+    │
+    ▼
+触发会话摘要生成
+    │
+    ▼
+调用 Model 生成摘要 (summaryPolicy: any/all)
+    │
+    ▼
+更新 Session.State["summary"]
+    │
+    ▼
+下次请求时注入为 System Message
+</code></pre><h4 id="memory-数据模型">Memory 数据模型 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Memory {
+    Scope: {AppName, UserID, SessionID}
+    Entries: []MemoryEntry {
+        • 文本内容
+        • 向量嵌入 (sqlitevec/pgvector)
+        • 元数据 (来源、时间、类型)
+    }
+}
+
+MEMORY.md (file backend):
+    # Memory
+    - 用户喜欢简洁的回答
+    - 用户是 Python 开发者
+    - 项目使用 Go 1.22
+</code></pre><h4 id="conversation-scope-重写">Conversation Scope 重写 </h4>
+<p>通过 <code>conversationscope</code> 包实现存储键的动态重写：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>原始 Key: {AppName: "dwclaw", UserID: "telegram:123456"}
+    │
+    ▼
+conversationscope.WrapSessionService()
+    │
+    ▼
+重写为: {AppName: "dwclaw", UserID: "storage_user_id"}
+    │
+    ▼
+更新索引映射: telegram:123456 → storage_user_id
+    │
+    ▼
+返回给调用方时恢复原始 UserID
+</code></pre><p>这支持了<strong>多用户共享存储</strong>的场景（如 Telegram 配对后多个用户映射到同一存储用户）。</p>
+<hr>
+<h3 id="8-技能系统-skills">8. 技能系统 (Skills) </h3>
+<p><strong>路径</strong>: <a href="dclaw/internal/skills/"><code>internal/skills/</code></a></p>
+<p>技能系统是 dclaw 的核心扩展机制，让 AI 可以动态学习和使用新能力。</p>
+<h4 id="技能仓库架构">技能仓库架构 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>┌──────────────────────────────────────────────────────────┐
+│                   Skill Repository                        │
+│                                                          │
+│  ┌────────────┐  ┌────────────┐  ┌───────────────────┐  │
+│  │ 技能发现    │  │ 技能加载   │  │ 技能状态           │  │
+│  │            │  │            │  │                    │  │
+│  │ 扫描目录    │  │ 解析 YAML  │  │ eligible/unable    │  │
+│  │ 解析 SKILL  │  │ 加载 Body  │  │ 原因追踪           │  │
+│  │ 检查依赖    │  │ 检查二进制  │  │ 配置管理           │  │
+│  └────────────┘  └────────────┘  └───────────────────┘  │
+│                                                          │
+│  ┌────────────┐  ┌────────────┐  ┌───────────────────┐  │
+│  │ 热更新      │  │ 工具集成   │  │ 配置系统           │  │
+│  │            │  │            │  │                    │  │
+│  │ fsnotify   │  │ skill_list │  │ API Keys           │  │
+│  │ 防抖合并    │  │ skill_load │  │ 环境变量           │  │
+│  │ 增量重载    │  │ 技能指导    │  │ 启用/禁用          │  │
+│  └────────────┘  └────────────┘  └───────────────────┘  │
+└──────────────────────────────────────────────────────────┘
+</code></pre><h4 id="技能加载流程">技能加载流程 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>启动时扫描
+    │
+    ▼
+遍历 skills.dirs 目录
+    │
+    ▼
+对每个子目录:
+    │
+    ├── 读取 SKILL.md
+    │   ├── 解析 frontmatter (name, description, commands, tags)
+    │   └── 保存 body 内容
+    │
+    ├── 检查依赖二进制
+    │   ├── 在 PATH 中搜索
+    │   ├── 找到 → eligible
+    │   └── 未找到 → unable (记录原因)
+    │
+    ├── 检查配置
+    │   ├── enabled=false → 跳过
+    │   ├── API Key 验证
+    │   └── 环境变量注入
+    │
+    └── 注册到技能仓库
+    │
+    ▼
+启动 WatchService (如果 skills.watch=true)
+    │
+    ▼
+监听文件变化 → 防抖 → 增量重载
+</code></pre><h4 id="技能工具">技能工具 </h4>
+<p>AI 通过两个工具与技能系统交互：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>skill_list:
+    输入: 无
+    输出: 所有可用技能的列表
+    包含: name, description, path, commands, tags, status
+
+skill_load:
+    输入: skill_name 或 skill_path
+    输出: SKILL.md 完整内容
+    行为: 加载技能定义，AI 可以据此执行技能
+</code></pre><h4 id="技能指导-skill-guidance">技能指导 (Skill Guidance) </h4>
+<p>系统提示词中注入的技能使用指导（约 500 字），核心规则：</p>
+<ol>
+<li><strong>必须加载</strong>：当用户提到技能名、斜杠命令或任务匹配技能描述时，<strong>必须</strong>在同一轮调用 <code>skill_load</code></li>
+<li><strong>先加载后行动</strong>：不能从摘要或记忆中回答，必须先加载 <a href="http://SKILL.md">SKILL.md</a></li>
+<li><strong>最小加载</strong>：只加载需要的文档，避免批量加载</li>
+<li><strong>不发明</strong>：不能从摘要中发明命令、认证步骤或工作流</li>
+</ol>
+<hr>
+<h3 id="9-工具系统-tools">9. 工具系统 (Tools) </h3>
+<p>dclaw 的工具系统分为两类：<strong>Tool Provider</strong>（静态工具列表）和 <strong>ToolSet Provider</strong>（动态工具集）。</p>
+<h4 id="工具架构">工具架构 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>┌──────────────────────────────────────────────────────────┐
+│                    Tool System                            │
+│                                                          │
+│  ┌────────────────────────────────────────────────────┐  │
+│  │              Tool Provider (静态工具)               │  │
+│  │                                                    │  │
+│  │  • exec_command     - Shell 命令执行               │  │
+│  │  • read_document    - PDF/DOCX/TXT 读取            │  │
+│  │  • read_spreadsheet - CSV/Excel 读取               │  │
+│  │  • conversation_history - 对话历史查询             │  │
+│  │  • browser_*        - 浏览器自动化                 │  │
+│  │  • cron_*           - 定时任务管理                 │  │
+│  │  • message          - 出站消息发送                 │  │
+│  │  • write_stdin      - 交互式输入                   │  │
+│  │  • kill_session     - 终止会话                     │  │
+│  │  • DuckDuckGo       - 搜索引擎                     │  │
+│  │  • webfetch_http    - HTTP 抓取                    │  │
+│  └────────────────────────────────────────────────────┘  │
+│                                                          │
+│  ┌────────────────────────────────────────────────────┐  │
+│  │              ToolSet Provider (动态工具集)          │  │
+│  │                                                    │  │
+│  │  • MCP (stdio/sse/streamable) - MCP 协议工具       │  │
+│  │  • File System                - 文件系统操作       │  │
+│  │  • OpenAPI                    - OpenAPI 规范工具   │  │
+│  │  • Google Search              - Google 搜索        │  │
+│  │  • Wikipedia                  - 维基百科查询       │  │
+│  │  • Arxiv Search               - 学术论文搜索       │  │
+│  │  • Email                      - 邮件工具          │  │
+│  └────────────────────────────────────────────────────┘  │
+└──────────────────────────────────────────────────────────┘
+</code></pre><h4 id="dwclaw-内置工具">dwclaw 内置工具 </h4>
+<p>这些工具在 <code>builddwclawTools()</code> 中构建，提供运行时上下文：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>exec_command:
+    • 执行本地 Shell 命令
+    • 注入环境变量 (dwclaw_* 前缀)
+    • 支持工作目录控制
+    • 超时控制
+
+message:
+    • 向当前或目标聊天发送消息
+    • 支持文本 + 文件附件
+    • 支持 as_voice 选项
+    • 通过 Outbound Router 路由
+
+read_document / read_spreadsheet:
+    • 读取上传的文档文件
+    • 支持 PDF, DOCX, TXT, CSV, Excel
+    • 优先于 exec_command 使用
+
+conversation_history:
+    • 查询当前对话历史
+    • 支持轮次限制
+    • 区分于长期记忆
+
+memory_  
+    • 读写 MEMORY.md 文件
+    • 持久化用户偏好和事实
+</code></pre><h4 id="环境变量注入">环境变量注入 </h4>
+<p>exec_command 执行时自动注入的环境变量：</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token assign-left variable">dwclaw_MEMORY_FILE</span><span class="token operator">=</span>/path/to/MEMORY.md
+<span class="token assign-left variable">dwclaw_LAST_UPLOAD_PATH</span><span class="token operator">=</span>/path/to/upload.pdf
+<span class="token assign-left variable">dwclaw_LAST_UPLOAD_NAME</span><span class="token operator">=</span>report.pdf
+<span class="token assign-left variable">dwclaw_LAST_UPLOAD_MIME</span><span class="token operator">=</span>application/pdf
+<span class="token assign-left variable">dwclaw_LAST_UPLOAD_HOST_REF</span><span class="token operator">=</span>host://<span class="token punctuation">..</span>.
+<span class="token assign-left variable">dwclaw_SESSION_UPLOADS_DIR</span><span class="token operator">=</span>/path/to/session/uploads/
+<span class="token assign-left variable">dwclaw_RECENT_UPLOADS_JSON</span><span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token punctuation">..</span>.<span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token assign-left variable">dwclaw_LAST_PDF_PATH</span><span class="token operator">=</span><span class="token punctuation">..</span>.
+<span class="token assign-left variable">dwclaw_LAST_IMAGE_PATH</span><span class="token operator">=</span><span class="token punctuation">..</span>.
+<span class="token assign-left variable">dwclaw_LAST_AUDIO_PATH</span><span class="token operator">=</span><span class="token punctuation">..</span>.
+<span class="token assign-left variable">dwclaw_LAST_VIDEO_PATH</span><span class="token operator">=</span><span class="token punctuation">..</span>.
+</code></pre><hr>
+<h3 id="10-对话管理-conversation">10. 对话管理 (Conversation) </h3>
+<p><strong>路径</strong>: <a href="dclaw/conversation/"><code>conversation/</code></a></p>
+<p>对话管理负责将持久化的会话事件转换为 AI 可理解的上下文消息。</p>
+<h4 id="对话历史投影">对话历史投影 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Session Events (持久化)
+    │
+    ▼
+BuildInjectedContextMessages()
+    │
+    ├── 添加会话摘要 (System Message)
+    │
+    ├── 构建可见历史
+    │   ├── 过滤内部事件
+    │   ├── 角色标签转换 (user/assistant/tool)
+    │   ├── 说话人标注 (speaker field)
+    │   └── 引用处理 (quote_text)
+    │
+    ├── 应用窗口限制 (max_history_runs)
+    │
+    └── 返回 []model.Message
+</code></pre><h4 id="turn-投影">Turn 投影 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>BuildTurns(session, TurnOptions)
+    │
+    ▼
+将事件流转换为结构化的 Turn 列表
+    │
+    Turn {
+        Role: "user" | "assistant" | "tool"
+        Speaker: "User" | "Assistant" | "ToolName"
+        ActorID: "telegram:123456"
+        QuoteText: "@bot ..."
+        Text: "消息内容"
+        Timestamp: time.Time
+    }
+</code></pre><h4 id="对话插件">对话插件 </h4>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token keyword keyword-type">type</span> Plugin <span class="token keyword keyword-struct">struct</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token keyword keyword-func">func</span> <span class="token punctuation">(</span>p Plugin<span class="token punctuation">)</span> <span class="token function">BeforeRun</span><span class="token punctuation">(</span>session <span class="token operator">*</span>Session<span class="token punctuation">,</span> userMsg model<span class="token punctuation">.</span>Message<span class="token punctuation">)</span> <span class="token builtin">error</span>
+<span class="token keyword keyword-func">func</span> <span class="token punctuation">(</span>p Plugin<span class="token punctuation">)</span> <span class="token function">AfterRun</span><span class="token punctuation">(</span>session <span class="token operator">*</span>Session<span class="token punctuation">,</span> events <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">*</span>event<span class="token punctuation">.</span>Event<span class="token punctuation">)</span> <span class="token builtin">error</span>
+</code></pre><p>对话插件在 Runner 执行前后被调用，用于：</p>
+<ul>
+<li>注入额外的系统消息</li>
+<li>记录对话指标</li>
+<li>实现自定义的会话逻辑</li>
+</ul>
+<hr>
+<h3 id="11-出站路由-outbound-router">11. 出站路由 (Outbound Router) </h3>
+<p><strong>路径</strong>: <a href="dclaw/internal/outbound/"><code>internal/outbound/</code></a></p>
+<p>Outbound Router 负责将 AI 的出站消息路由到正确的通道。</p>
+<h4 id="架构">架构 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>AI 生成回复
+    │
+    ▼
+message 工具调用
+    │
+    ├── 指定 channel + target → 路由到特定通道
+    │
+    └── 不指定 → 使用当前会话的通道
+    │
+    ▼
+Outbound Router
+    │
+    ├── 查找 TextSender (纯文本)
+    │
+    ├── 查找 MessageSender (富媒体)
+    │
+    └── 调用对应通道的发送方法
+    │
+    ▼
+Channel 发送给用户
+</code></pre><h4 id="发送者接口">发送者接口 </h4>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token comment">// 纯文本发送</span>
+<span class="token keyword keyword-type">type</span> TextSender <span class="token keyword keyword-interface">interface</span> <span class="token punctuation">{</span>
+    Channel
+    <span class="token function">SendText</span><span class="token punctuation">(</span>ctx context<span class="token punctuation">.</span>Context<span class="token punctuation">,</span> target<span class="token punctuation">,</span> text <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token builtin">error</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 富媒体发送</span>
+<span class="token keyword keyword-type">type</span> MessageSender <span class="token keyword keyword-interface">interface</span> <span class="token punctuation">{</span>
+    Channel
+    <span class="token function">SendMessage</span><span class="token punctuation">(</span>ctx context<span class="token punctuation">.</span>Context<span class="token punctuation">,</span> target<span class="token punctuation">,</span> text <span class="token builtin">string</span><span class="token punctuation">,</span> files <span class="token punctuation">[</span><span class="token punctuation">]</span>FileRef<span class="token punctuation">,</span> opts SendOptions<span class="token punctuation">)</span> <span class="token builtin">error</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="路由注册">路由注册 </h4>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code>router <span class="token operator">:=</span> outbound<span class="token punctuation">.</span><span class="token function">NewRouter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword keyword-for">for</span> <span class="token boolean">_</span><span class="token punctuation">,</span> ch <span class="token operator">:=</span> <span class="token keyword keyword-range">range</span> channels <span class="token punctuation">{</span>
+    router<span class="token punctuation">.</span><span class="token function">Register</span><span class="token punctuation">(</span>ch<span class="token punctuation">)</span>  <span class="token comment">// 自动检测 TextSender / MessageSender</span>
+<span class="token punctuation">}</span>
+</code></pre><hr>
+<h3 id="12-定时任务引擎-cron">12. 定时任务引擎 (Cron) </h3>
+<p><strong>路径</strong>: <a href="dclaw/internal/cron/"><code>internal/cron/</code></a></p>
+<p>Cron 引擎支持通过对话或 API 创建、管理和执行定时 AI 任务。</p>
+<h4 id="架构-1">架构 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>┌──────────────────────────────────────────────────────────┐
+│                    Cron Service                           │
+│                                                          │
+│  ┌────────────┐  ┌────────────┐  ┌───────────────────┐  │
+│  │ 调度器      │  │ 执行引擎   │  │ 投递路由           │  │
+│  │            │  │            │  │                    │  │
+│  │ Cron 表达式 │  │ 独立 Runner│  │ Outbound Router    │  │
+│  │ 一次性任务  │  │ 特殊 Prompt│  │ 自动投递到目标     │  │
+│  │ 重复任务    │  │ 上下文注入  │  │ 当前聊天默认       │  │
+│  └────────────┘  └────────────┘  └───────────────────┘  │
+│                                                          │
+│  ┌────────────────────────────────────────────────────┐  │
+│  │              持久化                                 │  │
+│  │  • 任务存储在 state_dir/cron/                      │  │
+│  │  • 重启后自动恢复                                   │  │
+│  │  • 支持 JSON 序列化                                 │  │
+│  └────────────────────────────────────────────────────┘  │
+└──────────────────────────────────────────────────────────┘
+</code></pre><h4 id="任务执行流程">任务执行流程 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Cron 触发
+    │
+    ▼
+加载任务定义
+    │
+    ▼
+构建执行上下文
+    │   • 注入调度信息 (当前运行索引、是否最后一次)
+    │   • 注入原始任务描述
+    │   • 特殊 Prompt: "You are running an dwclaw scheduled job"
+    │
+    ▼
+cronRunner.Run() (独立的 Runner 实例)
+    │
+    ▼
+获取 AI 回复
+    │
+    ▼
+通过 Outbound Router 投递
+    │   ├── 指定 channel + target → 路由到目标
+    │   └── 不指定 → 发送到创建任务的聊天
+    │
+    ▼
+更新任务状态 (last_run, next_run, run_count)
+</code></pre><h4 id="任务数据模型">任务数据模型 </h4>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token keyword keyword-type">type</span> Job <span class="token keyword keyword-struct">struct</span> <span class="token punctuation">{</span>
+    ID          <span class="token builtin">string</span>        <span class="token comment">// UUID</span>
+    Task        <span class="token builtin">string</span>        <span class="token comment">// 任务描述</span>
+    Schedule    <span class="token builtin">string</span>        <span class="token comment">// Cron 表达式或一次性标记</span>
+    Channel     <span class="token builtin">string</span>        <span class="token comment">// 投递通道</span>
+    Target      <span class="token builtin">string</span>        <span class="token comment">// 投递目标</span>
+    CreatedAt   time<span class="token punctuation">.</span>Time
+    LastRun     time<span class="token punctuation">.</span>Time
+    NextRun     time<span class="token punctuation">.</span>Time
+    RunCount    <span class="token builtin">int</span>
+    MaxRuns     <span class="token builtin">int</span>           <span class="token comment">// 0 = 无限</span>
+    Enabled     <span class="token builtin">bool</span>
+<span class="token punctuation">}</span>
+</code></pre><hr>
+<h3 id="13-admin-管理界面">13. Admin 管理界面 </h3>
+<p><strong>路径</strong>: <a href="dclaw/admin/"><code>admin/</code></a></p>
+<p>Admin UI 是一个内置的 Web 管理界面，提供对运行时的全面监控和管理。</p>
+<h4 id="架构-2">架构 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>┌──────────────────────────────────────────────────────────┐
+│                    Admin Server                           │
+│                                                          │
+│  HTTP Handler (独立端口，默认 127.0.0.1:19789)           │
+│                                                          │
+│  ┌────────────────────────────────────────────────────┐  │
+│  │              页面路由                               │  │
+│  │  /           → 首页/概览                            │  │
+│  │  /overview   → 运行时状态                           │  │
+│  │  /skills     → 技能管理                             │  │
+│  │  /prompts    → Prompt 编辑                          │  │
+│  │  /identity   → 身份配置                             │  │
+│  │  /personas   → Persona 管理                        │  │
+│  │  /chats      → 聊天列表                             │  │
+│  │  /memory     → 记忆管理                             │  │
+│  │  /automation → 定时任务                             │  │
+│  │  /sessions   → 会话管理                             │  │
+│  │  /debug      → 调试信息                             │  │
+│  │  /browser    → 浏览器状态                           │  │
+│  └────────────────────────────────────────────────────┘  │
+│                                                          │
+│  ┌────────────────────────────────────────────────────┐  │
+│  │              API 端点                               │  │
+│  │  /api/status           → 运行时状态 JSON            │  │
+│  │  /api/skills/status    → 技能状态                   │  │
+│  │  /api/skills/refresh   → 刷新技能                   │  │
+│  │  /api/skills/toggle    → 启用/禁用技能              │  │
+│  │  /api/memory/files     → 记忆文件列表               │  │
+│  │  /api/memory/file      → 记忆文件读写               │  │
+│  │  /api/cron/jobs        → 定时任务列表               │  │
+│  │  /api/cron/jobs/run    → 执行任务                   │  │
+│  │  /api/cron/jobs/remove → 删除任务                   │  │
+│  │  /api/exec/sessions    → 执行会话                   │  │
+│  │  /api/uploads          → 上传文件                   │  │
+│  │  /api/debug/sessions   → 调试会话                   │  │
+│  │  /api/debug/traces     → 调试追踪                   │  │
+│  └────────────────────────────────────────────────────┘  │
+└──────────────────────────────────────────────────────────┘
+</code></pre><h4 id="admin-与-runtime-的关系">Admin 与 Runtime 的关系 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Runtime
+    │
+    ├── PromptController  → Admin /prompts 页面编辑 Prompt
+    ├── SessionService    → Admin /sessions 页面查看会话
+    ├── SkillsRepo        → Admin /skills 页面管理技能
+    ├── CronService       → Admin /automation 页面管理任务
+    ├── MemoryFileStore   → Admin /memory 页面管理记忆
+    ├── DebugRecorder     → Admin /debug 页面查看追踪
+    └── ExecManager       → Admin 查看执行会话
+</code></pre><h4 id="自动端口切换">自动端口切换 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>admin.auto_port = true (默认)
+    │
+    ▼
+尝试绑定 127.0.0.1:19789
+    │
+    ├── 成功 → 使用首选地址
+    │
+    └── 端口被占用 → 自动尝试下一个端口
+        │
+        └── 记录警告日志，告知实际使用地址
+</code></pre><hr>
+<h3 id="14-a2a-协议">14. A2A 协议 </h3>
+<p><strong>路径</strong>: <a href="dclaw/app/a2a_surface.go"><code>app/a2a_surface.go</code></a></p>
+<p>A2A (Agent-to-Agent) 协议允许不同 Agent 实例之间进行通信和协作。</p>
+<h4 id="架构-3">架构 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>┌──────────────────────────────────────────────────────────┐
+│                    A2A Surface                            │
+│                                                          │
+│  HTTP Handler (挂载到 Gateway 同一端口)                   │
+│                                                          │
+│  ┌────────────┐  ┌────────────┐  ┌───────────────────┐  │
+│  │ Agent Card │  │ 任务处理   │  │ 流式支持           │  │
+│  │            │  │            │  │                    │  │
+│  │ /.well-    │  │ 接收任务   │  │ SSE 流式响应       │  │
+│  │   known/   │  │ 委托 Runner│  │ 进度推送            │  │
+│  │   agent.json│ │ 返回结果   │  │ 工具广告            │  │
+│  └────────────┘  └────────────┘  └───────────────────┘  │
+└──────────────────────────────────────────────────────────┘
+</code></pre><h4 id="agent-card">Agent Card </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+  <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"My Agent"</span><span class="token punctuation">,</span>
+  <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"A helpful AI assistant"</span><span class="token punctuation">,</span>
+  <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"http://localhost:8080"</span><span class="token punctuation">,</span>
+  <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"1.0.0"</span><span class="token punctuation">,</span>
+  <span class="token property">"capabilities"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"streaming"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"tools"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"exec_command"</span><span class="token punctuation">,</span> <span class="token string">"read_document"</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><hr>
+<h2 id="关键设计模式">关键设计模式 </h2>
+<h3 id="并发控制lane-locker">并发控制：Lane Locker </h3>
+<p><strong>问题</strong>：同一用户的多个并发请求可能导致对话状态混乱。</p>
+<p><strong>解决方案</strong>：<code>laneLocker</code> 按 sessionID 进行会话级互斥。</p>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token keyword keyword-type">type</span> laneLocker <span class="token keyword keyword-struct">struct</span> <span class="token punctuation">{</span>
+    mu    sync<span class="token punctuation">.</span>Mutex
+    lanes <span class="token keyword keyword-map">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token operator">*</span>laneEntry  <span class="token comment">// sessionID → laneEntry</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-func">func</span> <span class="token punctuation">(</span>l <span class="token operator">*</span>laneLocker<span class="token punctuation">)</span> <span class="token function">withLock</span><span class="token punctuation">(</span>key <span class="token builtin">string</span><span class="token punctuation">,</span> fn <span class="token keyword keyword-func">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    entry <span class="token operator">:=</span> l<span class="token punctuation">.</span><span class="token function">acquire</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span>    <span class="token comment">// 获取或创建 lane</span>
+    entry<span class="token punctuation">.</span>lock<span class="token punctuation">.</span><span class="token function">Lock</span><span class="token punctuation">(</span><span class="token punctuation">)</span>           <span class="token comment">// 会话级互斥</span>
+    <span class="token keyword keyword-defer">defer</span> <span class="token keyword keyword-func">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        entry<span class="token punctuation">.</span>lock<span class="token punctuation">.</span><span class="token function">Unlock</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        l<span class="token punctuation">.</span><span class="token function">release</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> entry<span class="token punctuation">)</span>   <span class="token comment">// 引用计数减少，清理空闲 lane</span>
+    <span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>                        <span class="token comment">// 在锁内执行</span>
+<span class="token punctuation">}</span>
+</code></pre><p><strong>设计亮点</strong>：</p>
+<ul>
+<li><strong>引用计数</strong>：多个 goroutine 可以等待同一 lane，避免创建多余的锁</li>
+<li><strong>自动清理</strong>：引用计数归零时自动移除 lane 条目，防止内存泄漏</li>
+<li><strong>非阻塞获取</strong>：不同 sessionID 的请求完全并行，互不影响</li>
+</ul>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Request A (session: "telegram:dm:123")  → acquire("telegram:dm:123") → 获得锁 → 执行
+Request B (session: "telegram:dm:123")  → acquire("telegram:dm:123") → 等待锁
+Request C (session: "telegram:dm:456")  → acquire("telegram:dm:456") → 获得锁 → 执行 (并行)
+</code></pre><hr>
+<h3 id="取消追踪cancel-tracker">取消追踪：Cancel Tracker </h3>
+<p><strong>问题</strong>：用户可能取消正在执行的请求，需要通知 Runner 停止。</p>
+<p><strong>解决方案</strong>：<code>cancelTracker</code> 维护已取消的 requestID 集合。</p>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token keyword keyword-type">type</span> cancelTracker <span class="token keyword keyword-struct">struct</span> <span class="token punctuation">{</span>
+    mu  sync<span class="token punctuation">.</span>Mutex
+    ids <span class="token keyword keyword-map">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token keyword keyword-struct">struct</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-func">func</span> <span class="token punctuation">(</span>t <span class="token operator">*</span>cancelTracker<span class="token punctuation">)</span> <span class="token function">Mark</span><span class="token punctuation">(</span>requestID <span class="token builtin">string</span><span class="token punctuation">)</span>   <span class="token comment">// 标记为已取消</span>
+<span class="token keyword keyword-func">func</span> <span class="token punctuation">(</span>t <span class="token operator">*</span>cancelTracker<span class="token punctuation">)</span> <span class="token function">Take</span><span class="token punctuation">(</span>requestID <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token builtin">bool</span>  <span class="token comment">// 检查并移除</span>
+</code></pre><p><strong>流程</strong>：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>POST /cancel {"request_id": "uuid-xxx"}
+    │
+    ▼
+cancelTracker.Mark("uuid-xxx")
+    │
+    ▼
+Runner 执行过程中定期检查
+    │
+    ▼
+cancelTracker.Take("uuid-xxx") → true → 停止执行
+</code></pre><hr>
+<h3 id="上下文注入runoption-resolver">上下文注入：RunOption Resolver </h3>
+<p><strong>问题</strong>：不同组件需要向 Runner 注入不同的运行时上下文。</p>
+<p><strong>解决方案</strong>：<code>RunOptionResolver</code> 链式注入。</p>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token keyword keyword-type">type</span> RunOptionResolver <span class="token keyword keyword-func">func</span><span class="token punctuation">(</span>
+    ctx context<span class="token punctuation">.</span>Context<span class="token punctuation">,</span>
+    input RunOptionInput<span class="token punctuation">,</span>
+<span class="token punctuation">)</span> <span class="token punctuation">(</span>context<span class="token punctuation">.</span>Context<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>agent<span class="token punctuation">.</span>RunOption<span class="token punctuation">)</span>
+</code></pre><p><strong>注册链</strong>：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Gateway
+    │
+    ├── Langfuse Resolver      → 注入追踪上下文
+    ├── Delivery Resolver      → 注入投递上下文
+    ├── Conversation Resolver  → 注入对话历史
+    └── 自定义 Resolver        → 下游发行版注入
+    │
+    ▼
+合并所有 RunOption → 传递给 Runner
+</code></pre><p><strong>设计亮点</strong>：</p>
+<ul>
+<li>每个 Resolver 独立、可组合</li>
+<li>可以修改 context 和添加 RunOption</li>
+<li>支持下游发行版注入自定义逻辑</li>
+</ul>
+<hr>
+<h3 id="会话作用域重写conversation-scope">会话作用域重写：Conversation Scope </h3>
+<p><strong>问题</strong>：Telegram 配对后，多个用户可能共享同一存储用户。</p>
+<p><strong>解决方案</strong>：<code>conversationscope</code> 在存储层重写 Session Key。</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>逻辑 UserID: "telegram:123456"
+    │
+    ▼
+conversationscope.rewriteKeyForStorage(ctx, key)
+    │
+    ├── 检查上下文中的显式存储用户
+    │
+    ├── 找到 → 使用存储 UserID: "telegram:789012" (管理员)
+    │
+    └── 未找到 → 使用原始 UserID
+    │
+    ▼
+存储键: {AppName: "dwclaw", UserID: "telegram:789012"}
+    │
+    ▼
+返回给调用方时恢复逻辑 UserID
+</code></pre><p><strong>索引机制</strong>：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>RememberIndexedStorageUser(ctx, service, appName, logicalUser, storageUser)
+    │
+    ▼
+维护映射: logicalUser → storageUser
+    │
+    ▼
+后续请求自动使用映射
+</code></pre><hr>
+<h3 id="流式聚合reply-accumulator">流式聚合：Reply Accumulator </h3>
+<p><strong>问题</strong>：Runner 返回的是事件流，需要聚合为最终回复。</p>
+<p><strong>解决方案</strong>：<code>replyAccumulator</code> 消费事件流并聚合。</p>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token keyword keyword-type">type</span> replyAccumulator <span class="token keyword keyword-struct">struct</span> <span class="token punctuation">{</span>
+    Text      <span class="token builtin">string</span>       <span class="token comment">// 聚合的回复文本</span>
+    RequestID <span class="token builtin">string</span>       <span class="token comment">// 请求 ID</span>
+    Error     <span class="token builtin">error</span>        <span class="token comment">// 捕获的错误</span>
+    Usage     <span class="token operator">*</span>Usage       <span class="token comment">// Token 用量</span>
+
+    seenFull <span class="token builtin">bool</span>          <span class="token comment">// 是否已收到完整回复</span>
+    builder  strings<span class="token punctuation">.</span>Builder  <span class="token comment">// 增量文本构建器</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-func">func</span> <span class="token punctuation">(</span>a <span class="token operator">*</span>replyAccumulator<span class="token punctuation">)</span> <span class="token function">Consume</span><span class="token punctuation">(</span>evt <span class="token operator">*</span>event<span class="token punctuation">.</span>Event<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-switch">switch</span> evt<span class="token punctuation">.</span>Object <span class="token punctuation">{</span>
+    <span class="token keyword keyword-case">case</span> model<span class="token punctuation">.</span>ObjectTypeChatCompletion<span class="token punctuation">:</span>
+        a<span class="token punctuation">.</span><span class="token function">consumeFull</span><span class="token punctuation">(</span>evt<span class="token punctuation">.</span>Response<span class="token punctuation">)</span>    <span class="token comment">// 完整回复</span>
+    <span class="token keyword keyword-case">case</span> model<span class="token punctuation">.</span>ObjectTypeChatCompletionChunk<span class="token punctuation">:</span>
+        a<span class="token punctuation">.</span><span class="token function">consumeDelta</span><span class="token punctuation">(</span>evt<span class="token punctuation">.</span>Response<span class="token punctuation">)</span>   <span class="token comment">// 增量片段</span>
+    <span class="token punctuation">}</span>
+    a<span class="token punctuation">.</span><span class="token function">captureUsage</span><span class="token punctuation">(</span>evt<span class="token punctuation">.</span>Response<span class="token punctuation">)</span>       <span class="token comment">// 累积 Token 用量</span>
+<span class="token punctuation">}</span>
+</code></pre><p><strong>聚合逻辑</strong>：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>事件流:
+    Chunk 1: "你"
+    Chunk 2: "好"
+    Chunk 3: "！"
+    Done: true
+    │
+    ▼
+replyAccumulator:
+    builder.WriteString("你")
+    builder.WriteString("好")
+    builder.WriteString("！")
+    │
+    ▼
+Text = "你好！"
+Usage = {PromptTokens: 10, CompletionTokens: 3, TotalTokens: 13}
+</code></pre><hr>
+<h3 id="调试追踪debug-recorder">调试追踪：Debug Recorder </h3>
+<p><strong>问题</strong>：需要记录完整的请求-响应链路用于调试。</p>
+<p><strong>解决方案</strong>：<code>DebugRecorder</code> 记录每个请求的完整生命周期。</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Trace 生命周期:
+    │
+    ▼
+1. ensureTrace() → 创建 Trace
+    │
+    ▼
+2. Record(KindGatewayReq, summary) → 记录请求
+    │
+    ▼
+3. Record(KindGatewayRun, metadata) → 记录运行开始
+    │
+    ▼
+4. Record(KindRunnerEvent, event) → 记录每个 Runner 事件
+    │
+    ▼
+5. Record(KindGatewayRsp, response) → 记录响应
+    │
+    ▼
+6. Close(TraceEnd) → 记录结束 (耗时、状态、错误)
+</code></pre><p><strong>存储格式</strong>：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>debug/
+├── by-session/
+│   └── {session_id}/
+│       ├── meta.json       # 会话元数据
+│       ├── events.jsonl    # 事件流 (NDJSON)
+│       └── result.json     # 最终结果
+</code></pre><hr>
+<h2 id="启动流程详解">启动流程详解 </h2>
+<p>完整的启动流程，从 <code>main()</code> 到所有组件就绪：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>main()
+    │
+    ▼
+检查 --version / upgrade
+    │
+    ▼
+app.Main(args)
+    │
+    ▼
+检查子命令 (pairing, doctor, inspect, bootstrap)
+    │
+    ▼
+signal.NotifyContext() → 创建可取消的 context
+    │
+    ▼
+run(ctx, args)
+    │
+    ▼
+┌─────────────────────────────────────────────────────────┐
+│ 阶段 1: 配置解析                                         │
+│                                                         │
+│ parseRunOptions(args)                                   │
+│   • 解析命令行参数                                       │
+│   • 加载 YAML 配置文件                                   │
+│   • 合并环境变量                                         │
+│   • 验证必填字段                                         │
+└────────────────────────┬────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────┐
+│ 阶段 2: 基础设施准备                                     │
+│                                                         │
+│ resolveStateDir() → 确定状态目录                        │
+│ maybeEnableDebugRecorder() → 启用调试记录               │
+│ maybeEnableLangfuse() → 启用 Langfuse 追踪              │
+│ maybeStartBrowserServerSupervisor() → 启动浏览器监控    │
+└────────────────────────┬────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────┐
+│ 阶段 3: 核心组件创建                                     │
+│                                                         │
+│ modelFromOptions() → 创建 Model                         │
+│ newSessionService() → 创建会话服务                      │
+│ newMemoryService() → 创建记忆服务                       │
+│ newRuntimeStores() → 创建运行时存储                     │
+│   • uploads.Store (上传文件管理)                        │
+│   • persona.Store (Persona 管理)                        │
+│   • memoryFile.Store (记忆文件管理)                     │
+└────────────────────────┬────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────┐
+│ 阶段 4: Agent 和工具创建                                 │
+│                                                         │
+│ resolveAgentPrompts() → 解析提示词                      │
+│ builddwclawTools() → 构建内置工具                       │
+│   • exec_command                                        │
+│   • read_document / read_spreadsheet                    │
+│   • conversation_history                                │
+│   • message (出站路由)                                  │
+│   • cron_* (定时任务)                                   │
+│   • memory_file                                         │
+│   • browser_*                                           │
+│                                                         │
+│ newAgent() → 创建 Agent                                 │
+│   • 创建技能仓库                                         │
+│   • 扫描技能目录                                         │
+│   • 组装工具列表                                         │
+│   • 构建系统提示词                                       │
+│                                                         │
+│ newSkillsWatchService() → 启动技能热更新                │
+└────────────────────────┬────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────┐
+│ 阶段 5: Runner 和 Gateway 创建                           │
+│                                                         │
+│ runner.NewRunner() → 创建执行引擎                       │
+│   • 注入会话服务                                         │
+│   • 注入记忆服务                                         │
+│   • 注入对话插件                                         │
+│   • 配置 Ralph Loop                                     │
+│                                                         │
+│ gateway.New() → 创建网关服务器                          │
+│   • 注入 Runner                                         │
+│   • 配置安全策略                                         │
+│   • 注入上传存储                                         │
+│   • 注入调试记录器                                       │
+│   • 注册 RunOption Resolver 链                          │
+└────────────────────────┬────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────┐
+│ 阶段 6: 通道和服务创建                                   │
+│                                                         │
+│ newA2ASurface() → 创建 A2A 协议表面层                   │
+│                                                         │
+│ newInProcGatewayClient() → 创建进程内 Gateway 客户端    │
+│                                                         │
+│ channelsFromRegistry() → 创建通道                       │
+│   • 遍历配置的通道列表                                    │
+│   • 通过 registry.LookupChannel() 获取工厂              │
+│   • 调用工厂创建通道实例                                 │
+│   • 注册到 Outbound Router                              │
+│                                                         │
+│ cron.NewService() → 创建定时任务服务                    │
+│   • 创建独立的 cronRunner                               │
+│   • 注入 Outbound Router                                │
+│   • 加载持久化任务                                       │
+│   • 启动调度器                                           │
+└────────────────────────┬────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────┐
+│ 阶段 7: Admin UI 创建                                    │
+│                                                         │
+│ buildAdminConfig() → 构建 Admin 配置                    │
+│ admin.New() → 创建 Admin 服务器                         │
+│   • 注入所有运行时组件                                    │
+│   • 构建页面模板                                         │
+│   • 注册 API 端点                                       │
+│   • 启动 HTTP 监听                                      │
+└────────────────────────┬────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────┐
+│ 阶段 8: 启动运行                                         │
+│                                                         │
+│ 启动 HTTP Gateway 服务器 (默认 :8080)                   │
+│ 启动 Admin UI 服务器 (默认 127.0.0.1:19789)             │
+│                                                         │
+│ for _, ch := range channels {                           │
+│     go ch.Run(ctx)  // 各通道在独立 goroutine 中运行    │
+│ }                                                       │
+│                                                         │
+│ cronSvc.Start(ctx)  // 启动定时任务调度                 │
+│                                                         │
+│ ←ctx.Done()  // 等待信号 (SIGINT/SIGTERM)               │
+└────────────────────────┬────────────────────────────────┘
+                         │
+                         ▼
+优雅关闭:
+    cronSvc.Close()
+    skillsWatch.Close()
+    toolSets.Close()
+    memoryService.Close()
+    sessionService.Close()
+    runner.Close()
+    telemetryShutdown()
+</code></pre><hr>
+<h2 id="数据流详解">数据流详解 </h2>
+<h3 id="消息处理流程">消息处理流程 </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>用户: "帮我分析一下这个 PDF"
+    │
+    ▼
+Telegram Channel
+    │
+    ├── 下载 PDF 文件
+    ├── 保存到 uploads.Store
+    ├── 生成 dwclaw_LAST_UPLOAD_PATH 环境变量
+    │
+    ▼
+gwClient.SendMessage({
+    channel: "telegram",
+    from: "123456",
+    thread: "",
+    text: "帮我分析一下这个 PDF",
+    parts: [{type: "file", ref: "host://..."}]
+})
+    │
+    ▼
+Gateway Server
+    │
+    ├── SessionID: "telegram:dm:123456"
+    ├── RequestID: "uuid-xxx"
+    ├── 处理 parts → 构建 model.Message (含附件)
+    │
+    ▼
+laneLocker.withLock("telegram:dm:123456")
+    │
+    ▼
+resolveRunOptions()
+    │
+    ├── 注入对话历史 (最近 N 轮)
+    ├── 注入记忆内容 (MEMORY.md)
+    ├── 注入技能列表
+    ├── 注入 Langfuse 追踪
+    │
+    ▼
+runner.Run(ctx, "123456", "telegram:dm:123456", userMsg, runOpts)
+    │
+    ▼
+Agent.Run()
+    │
+    ├── 构建 System Prompt
+    │   ├── Agent Instruction
+    │   ├── 技能指导
+    │   ├── 工具指导 (包含 dwclaw_* 环境变量说明)
+    │   ├── 上传上下文 (dwclaw_LAST_UPLOAD_PATH 等)
+    │
+    ├── 调用 Model API
+    │
+    ├── Model 决定调用 read_document 工具
+    │   ├── 参数: {path: dwclaw_LAST_UPLOAD_PATH}
+    │   ├── 执行工具 → 读取 PDF 内容
+    │   ├── 返回工具结果给 Model
+    │
+    ├── Model 基于 PDF 内容生成回复
+    │
+    └── 返回事件流
+    │
+    ▼
+replyAccumulator 聚合事件
+    │
+    ▼
+MessageResponse {
+    reply: "这个 PDF 包含以下内容...\n\n1. ...\n2. ...\n3. ...",
+    session_id: "telegram:dm:123456",
+    request_id: "uuid-xxx",
+    usage: {prompt: 1500, completion: 300, total: 1800}
+}
+    │
+    ▼
+Telegram Channel 发送回复
+    │
+    ├── streaming=progress: 实时编辑消息
+    ├── 最终回复: 发送完整消息
+    └── 如果 AI 生成了文件 → 作为附件发送
+</code></pre><h3 id="流式响应流程">流式响应流程 </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>HTTP POST /v1/gateway/messages/stream
+    │
+    ▼
+handleMessagesStream()
+    │
+    ├── 检查 http.Flusher 支持
+    ├── 设置 SSE 响应头
+    ├── 写入 200 OK + Flush
+    │
+    ▼
+StreamMessage() → 返回 &lt;-chan StreamEvent
+    │
+    ▼
+streamLocked()
+    │
+    ├── 发送: run_started
+    │   event: run_started
+    │   data: {session_id: "...", request_id: "..."}
+    │
+    ├── 发送: progress (preparing)
+    │   event: progress
+    │   data: {stage: "preparing", summary: "Preparing request"}
+    │
+    ├── runner.Run() → 事件流
+    │
+    ├── 遍历事件:
+    │   │
+    │   ├── 工具调用事件 → progress (running_tool)
+    │   │   event: progress
+    │   │   data: {stage: "running_tool", summary: "Running local tool"}
+    │   │
+    │   ├── 文本增量事件 → public_delta
+    │   │   event: public_delta
+    │   │   data: {text: "这"}
+    │   │
+    │   ├── 下一个增量 → public_delta
+    │   │   event: public_delta
+    │   │   data: {text: "个"}
+    │   │
+    │   ├── 思考过程 → thought_delta
+    │   │   event: thought_delta
+    │   │   data: {text: "Let me analyze..."}
+    │   │
+    │   └── ...
+    │
+    ├── 发送: progress (answering)
+    │   event: progress
+    │   data: {stage: "answering", summary: "Preparing final answer"}
+    │
+    ├── 发送: run_completed
+    │   event: run_completed
+    │   data: {reply: "这个...", usage: {...}}
+    │
+    └── close(out)
+</code></pre><h3 id="工具调用流程">工具调用流程 </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Agent 决定调用工具
+    │
+    ▼
+构建 ToolCall {
+    name: "exec_command",
+    arguments: {command: "ls -la", workdir: "/tmp"}
+}
+    │
+    ▼
+查找工具实现
+    │
+    ├── 内置工具 → 直接执行
+    ├── 技能工具 → 加载技能后执行
+    ├── MCP 工具 → 通过 MCP 协议调用
+    └── 自定义工具 → 调用注册的 ToolProvider
+    │
+    ▼
+执行工具
+    │
+    ├── 注入环境变量 (dwclaw_*)
+    ├── 设置超时
+    ├── 捕获 stdout/stderr
+    │
+    ▼
+工具结果
+    │
+    ├── 成功 → ToolResult {content: "...", success: true}
+    ├── 失败 → ToolResult {content: "error: ...", success: false}
+    └── 媒体结果 → media_files / media_dirs
+    │
+    ▼
+返回给 Model
+    │
+    ├── Model 基于结果继续推理
+    ├── 可能触发更多工具调用
+    └── 最终生成回复
+</code></pre><h3 id="技能加载流程-1">技能加载流程 </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>用户: "/review 我的代码"
+    │
+    ▼
+AI 分析意图 → 匹配 "code-review" 技能
+    │
+    ▼
+调用 skill_load 工具
+    │
+    ▼
+SkillRepository.Load("code-review")
+    │
+    ├── 查找技能目录
+    ├── 读取 SKILL.md
+    │   ├── 解析 frontmatter
+    │   └── 提取 body 内容
+    │
+    ├── 检查依赖
+    │   ├── git → 在 PATH 中找到
+    │   └── shell → 在 PATH 中找到
+    │
+    └── 返回 SKILL.md 内容
+    │
+    ▼
+AI 读取技能定义
+    │
+    ├── 理解工作流程
+    ├── 找到辅助脚本路径
+    ├── 执行技能定义的步骤
+    │
+    └── 调用 exec_command 运行 skills/code-review/scripts/review.sh
+</code></pre><hr>
+<h2 id="项目结构">项目结构 </h2>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>dclaw/
+├── admin/                              # Admin Web 管理界面
+│   ├── service.go                      #   HTTP 服务、路由、处理器
+│   ├── runtime.go                      #   运行时状态展示
+│   ├── debug.go                        #   调试信息端点
+│   ├── config_page_test.go             #   配置页面测试
+│   └── memory_test.go                  #   记忆页面测试
+│
+├── app/                                # 应用核心运行时
+│   ├── app.go                          #   主入口、NewRuntime、run 函数
+│   ├── run_options.go                  #   命令行参数解析、配置结构
+│   ├── backends.go                     #   会话/记忆后端工厂函数
+│   ├── sql_backends.go                 #   SQL 后端通用逻辑
+│   ├── sqlite_backend_*.go             #   SQLite 后端 (cgo/nocgo 变体)
+│   ├── sqlitevec_memory_*.go           #   SQLite 向量记忆后端
+│   ├── sqlite_memory_backend_*.go      #   SQLite 记忆后端
+│   ├── admin_server.go                 #   Admin 服务器集成
+│   ├── admin_prompts.go                #   Admin Prompt 管理
+│   ├── admin_skills_config.go          #   Admin 技能配置
+│   ├── admin_runtime_config.go         #   Admin 运行时配置
+│   ├── admin_identity.go               #   Admin 身份管理
+│   ├── a2a_surface.go                  #   A2A 协议表面层
+│   ├── browser_server_supervisor.go    #   浏览器服务监控
+│   ├── builtins.go                     #   内置后端注册 (init)
+│   ├── tooling_builtins.go             #   内置工具注册 (init)
+│   ├── conversation.go                 #   对话管理集成
+│   ├── delivery.go                     #   消息投递逻辑
+│   ├── deps_cmd.go                     #   依赖管理子命令
+│   ├── doctor_cmd.go                   #   诊断子命令
+│   ├── inspect_cmd.go                  #   检查子命令
+│   ├── pairing_cmd.go                  #   Telegram 配对子命令
+│   ├── inproc_gateway_client.go        #   进程内 Gateway 客户端
+│   ├── langfuse.go                     #   Langfuse 追踪集成
+│   ├── mcp_images.go                   #   MCP 图像处理
+│   ├── memory_file_tool_callback.go    #   记忆文件工具回调
+│   ├── skill_config_keys.go            #   技能配置键管理
+│   ├── telegram_helpers.go             #   Telegram 辅助函数
+│   └── tool_result_media.go            #   工具结果媒体处理
+│
+├── cmd/dclaw/                       # CLI 二进制入口
+│   ├── main.go                         #   主函数、子命令路由
+│   ├── stat.go                         #   stat 子命令
+│   └── update.go                       #   upgrade 子命令（自动更新）
+│
+├── conversation/                       # 对话抽象层
+│   ├── history.go                      #   对话历史投影
+│   ├── annotation.go                   #   对话注解
+│   ├── constants.go                    #   常量定义
+│   └── plugin.go                       #   对话插件接口
+│
+├── croncmd/                            # Cron 命令行接口
+│   └── command.go                      #   Cron 命令解析
+│
+├── delivery/                           # 消息投递抽象
+│   └── annotation.go                   #   投递注解
+│
+├── examples/                           # 示例程序
+│   ├── a2a_subagent/main.go            #   A2A 子代理示例
+│   ├── mcp_stdio_server/main.go        #   MCP stdio 服务器示例
+│   └── stdin_chat/main.go              #   自定义 stdin 发行版示例
+│
+├── gwclient/                           # Gateway 客户端
+│   ├── client.go                       #   进程内 HTTP 客户端
+│   └── stream.go                       #   SSE 流式客户端
+│
+├── internal/                           # 内部实现包
+│   ├── browser/                        #   浏览器自动化
+│   │   ├── tool.go                     #     浏览器工具定义
+│   │   ├── driver.go                   #     浏览器驱动
+│   │   └── config.go                   #     浏览器配置
+│   │
+│   ├── channel/telegram/               #   Telegram 通道实现
+│   │   ├── channel.go                  #     核心通道逻辑
+│   │   ├── audio_input.go              #     语音输入处理
+│   │   ├── commands.go                 #     命令处理
+│   │   ├── format.go                   #     消息格式化
+│   │   ├── media.go                    #     媒体处理
+│   │   ├── outbound.go                 #     出站消息
+│   │   ├── streaming.go                #     流式响应
+│   │   └── utils.go                    #     工具函数
+│   │
+│   ├── conversationscope/              #   对话作用域管理
+│   │   ├── context.go                  #     上下文管理
+│   │   ├── index.go                    #     作用域索引
+│   │   └── session_service.go          #     会话服务包装
+│   │
+│   ├── conversationtool/               #   对话工具
+│   │   └── tool.go                     #     对话历史工具
+│   │
+│   ├── cron/                           #   定时任务引擎
+│   │   ├── service.go                  #     Cron 服务
+│   │   ├── tool.go                     #     Cron 工具
+│   │   └── types.go                    #     类型定义
+│   │
+│   ├── debugrecorder/                  #   调试记录器
+│   │   └── recorder.go                 #     调试事件记录
+│   │
+│   ├── deps/                           #   依赖管理
+│   │   ├── download.go                 #     依赖下载
+│   │   └── runtime.go                  #     运行时依赖
+│   │
+│   ├── gateway/                        #   HTTP Gateway
+│   │   ├── server.go                   #     HTTP 服务器
+│   │   ├── process.go                  #     消息处理核心
+│   │   ├── stream.go                   #     流式响应
+│   │   ├── audio_transcription.go      #     音频转写
+│   │   ├── context_messages.go         #     上下文消息
+│   │   ├── user_message.go             #     用户消息处理
+│   │   ├── uploads_context.go          #     上传上下文
+│   │   └── options.go                  #     配置选项
+│   │
+│   ├── octool/                         #   dclaw 工具集
+│   │   ├── tools.go                    #     核心工具
+│   │   └── file_tools.go               #     文件工具
+│   │
+│   ├── outbound/                       #   出站消息路由
+│   │   ├── router.go                   #     路由器
+│   │   ├── resolve.go                  #     目标解析
+│   │   └── tool.go                     #     出站工具
+│   │
+│   ├── skills/                         #   技能系统
+│   │   ├── repository.go               #     技能仓库
+│   │   ├── frontmatter.go              #     Frontmatter 解析
+│   │   ├── list_tool.go                #     技能列表工具
+│   │   ├── status.go                   #     技能状态
+│   │   └── watch.go                    #     技能热更新监听
+│   │
+│   ├── telegram/                       #   Telegram API 客户端
+│   │   └── options_helpers.go          #     选项辅助函数
+│   │
+│   └── uploads/                        #   文件上传管理
+│       └── store.go                    #     上传存储
+│
+├── plugins/                            # 可插拔通道/工具
+│   ├── echotool/                       #   Echo 工具（示例插件）
+│   ├── stdin/                          #   stdin 通道
+│   └── telegram/                       #   Telegram 通道
+│
+└── registry/                           # 插件注册中心
+    └── registry.go                     #   注册表实现
+</code></pre><hr>
+<h2 id="快速开始">快速开始 </h2>
+<h3 id="环境要求">环境要求 </h3>
+<ul>
+<li><strong>Go 1.21+</strong>（推荐 Go 1.22+）</li>
+<li>操作系统：Linux、macOS、Windows</li>
+<li>可选依赖：
+<ul>
+<li><strong>CGO</strong>：用于 SQLite 后端（如果不需要 SQLite，可设置 <code>CGO_ENABLED=0</code>）</li>
+<li><strong>Redis</strong>：用于 Redis 后端</li>
+<li><strong>MySQL / PostgreSQL / ClickHouse</strong>：用于对应后端</li>
+</ul>
+</li>
+</ul>
+<h3 id="编译">编译 </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> clone <span class="token operator">&lt;</span>repository-url<span class="token operator">&gt;</span>
+<span class="token builtin class-name">cd</span> dclaw
+
+<span class="token comment"># 编译默认二进制（包含 stdin + telegram 通道）</span>
+go build <span class="token parameter variable">-o</span> dclaw ./cmd/dclaw/
+
+<span class="token comment"># 不带 CGO 编译（禁用 SQLite 后端）</span>
+<span class="token assign-left variable">CGO_ENABLED</span><span class="token operator">=</span><span class="token number">0</span> go build <span class="token parameter variable">-o</span> dclaw ./cmd/dclaw/
+</code></pre><h3 id="最小化运行stdin-交互模式">最小化运行（stdin 交互模式） </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>./dclaw run <span class="token punctuation">\</span>
+  --model-mode openai <span class="token punctuation">\</span>
+  --openai-model gpt-4o <span class="token punctuation">\</span>
+  --openai-base-url https://api.openai.com/v1 <span class="token punctuation">\</span>
+  <span class="token parameter variable">--channels</span> stdin
+
+<span class="token comment"># 环境变量方式</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">OPENAI_BASE_URL</span><span class="token operator">=</span>https://api.openai.com/v1
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">OPENAI_MODEL</span><span class="token operator">=</span>gpt-4o
+./dclaw run <span class="token parameter variable">--channels</span> stdin
+</code></pre><h3 id="配置文件示例">配置文件示例 </h3>
+<pre data-role="codeBlock" data-info="yaml" class="language-yaml yaml"><code><span class="token comment"># dwclaw.yaml</span>
+<span class="token key atrule">app_name</span><span class="token punctuation">:</span> <span class="token string">"my-assistant"</span>
+<span class="token key atrule">http_addr</span><span class="token punctuation">:</span> <span class="token string">":8080"</span>
+
+<span class="token key atrule">model</span><span class="token punctuation">:</span>
+  <span class="token key atrule">mode</span><span class="token punctuation">:</span> openai
+  <span class="token key atrule">openai</span><span class="token punctuation">:</span>
+    <span class="token key atrule">model</span><span class="token punctuation">:</span> gpt<span class="token punctuation">-</span>4o
+    <span class="token key atrule">base_url</span><span class="token punctuation">:</span> <span class="token string">"https://api.openai.com/v1"</span>
+
+<span class="token key atrule">agent</span><span class="token punctuation">:</span>
+  <span class="token key atrule">type</span><span class="token punctuation">:</span> llm
+  <span class="token key atrule">instruction</span><span class="token punctuation">:</span> <span class="token string">"You are a helpful assistant."</span>
+
+<span class="token key atrule">session</span><span class="token punctuation">:</span>
+  <span class="token key atrule">backend</span><span class="token punctuation">:</span> sqlite
+
+<span class="token key atrule">memory</span><span class="token punctuation">:</span>
+  <span class="token key atrule">backend</span><span class="token punctuation">:</span> sqlitevec
+  <span class="token key atrule">limit</span><span class="token punctuation">:</span> <span class="token number">100</span>
+
+<span class="token key atrule">skills</span><span class="token punctuation">:</span>
+  <span class="token key atrule">dirs</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> skills
+  <span class="token key atrule">watch</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+<span class="token key atrule">channels</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">type</span><span class="token punctuation">:</span> stdin
+    <span class="token key atrule">config</span><span class="token punctuation">:</span>
+      <span class="token key atrule">show_prompt</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">show_role_labels</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+  <span class="token punctuation">-</span> <span class="token key atrule">type</span><span class="token punctuation">:</span> telegram
+    <span class="token key atrule">config</span><span class="token punctuation">:</span>
+      <span class="token key atrule">token</span><span class="token punctuation">:</span> <span class="token string">"YOUR_TELEGRAM_BOT_TOKEN"</span>
+      <span class="token key atrule">streaming</span><span class="token punctuation">:</span> progress
+
+<span class="token key atrule">admin</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enabled</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">addr</span><span class="token punctuation">:</span> <span class="token string">"127.0.0.1:19789"</span>
+</code></pre><hr>
+<h2 id="配置指南">配置指南 </h2>
+<h3 id="配置来源优先级">配置来源优先级 </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>命令行参数 (最高优先级)
+    ↓ 覆盖
+YAML 配置文件 (--config 或 $DWCLAW_CONFIG)
+    ↓ 覆盖
+环境变量 (OPENAI_BASE_URL, OPENAI_MODEL 等)
+    ↓ 覆盖
+内置默认值 (最低优先级)
+</code></pre><h3 id="核心配置项速查">核心配置项速查 </h3>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>关键配置</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>应用</td>
+<td><code>app_name</code>, <code>http_addr</code>, <code>state_dir</code></td>
+<td><code>dwclaw</code>, <code>:8080</code>, <code>~/.dw-agent-github/dwclaw</code></td>
+</tr>
+<tr>
+<td>模型</td>
+<td><code>model.mode</code>, <code>model.openai.model</code>, <code>model.openai.base_url</code></td>
+<td><code>openai</code>, <code>gpt-5</code></td>
+</tr>
+<tr>
+<td>Agent</td>
+<td><code>agent.type</code>, <code>agent.instruction</code></td>
+<td><code>llm</code>, 内置默认</td>
+</tr>
+<tr>
+<td>会话</td>
+<td><code>session.backend</code>, <code>session.add_summary</code>, <code>session.max_history_runs</code></td>
+<td><code>inmemory</code>, <code>false</code>, <code>0</code></td>
+</tr>
+<tr>
+<td>记忆</td>
+<td><code>memory.backend</code>, <code>memory.limit</code>, <code>memory.preload</code></td>
+<td><code>file</code>, <code>0</code>, <code>0</code></td>
+</tr>
+<tr>
+<td>技能</td>
+<td><code>skills.dirs</code>, <code>skills.watch</code>, <code>skills.max_loaded</code></td>
+<td><code>skills</code>, <code>false</code>, <code>0</code></td>
+</tr>
+<tr>
+<td>Admin</td>
+<td><code>admin.enabled</code>, <code>admin.addr</code>, <code>admin.auto_port</code></td>
+<td><code>false</code>, <code>127.0.0.1:19789</code>, <code>true</code></td>
+</tr>
+<tr>
+<td>A2A</td>
+<td><code>a2a.enabled</code>, <code>a2a.host</code>, <code>a2a.streaming</code></td>
+<td><code>false</code>, <code>-</code>, <code>false</code></td>
+</tr>
+<tr>
+<td>调试</td>
+<td><code>debug.recorder.enabled</code>, <code>debug.recorder.dir</code></td>
+<td><code>false</code>, <code>debug</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="命令行参考">命令行参考 </h2>
+<h3 id="主命令">主命令 </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>dclaw run <span class="token punctuation">[</span>flags<span class="token punctuation">]</span>         <span class="token comment"># 运行 Agent</span>
+dclaw <span class="token parameter variable">--version</span>           <span class="token comment"># 查看版本</span>
+dclaw upgrade <span class="token punctuation">[</span>flags<span class="token punctuation">]</span>     <span class="token comment"># 自动更新</span>
+</code></pre><h3 id="子命令">子命令 </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token comment"># Telegram 配对管理</span>
+dclaw pairing list
+dclaw pairing approve <span class="token operator">&lt;</span>chat_id<span class="token operator">&gt;</span>
+dclaw pairing status
+
+<span class="token comment"># 诊断检查</span>
+dclaw doctor <span class="token punctuation">[</span>--config config.yaml<span class="token punctuation">]</span>
+
+<span class="token comment"># 运行时检查</span>
+dclaw inspect <span class="token punctuation">[</span>--config config.yaml<span class="token punctuation">]</span>
+
+<span class="token comment"># 初始化引导</span>
+dclaw bootstrap <span class="token punctuation">[</span>--config config.yaml<span class="token punctuation">]</span>
+
+<span class="token comment"># 统计信息</span>
+dclaw <span class="token function">stat</span>
+</code></pre><h3 id="run-常用标志">run 常用标志 </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token comment"># 模型</span>
+--model-mode openai --openai-model gpt-4o --openai-base-url https://api.openai.com/v1
+--agent-type llm
+
+<span class="token comment"># 通道</span>
+<span class="token parameter variable">--channels</span> stdin,telegram
+
+<span class="token comment"># 存储</span>
+--session-backend sqlite --memory-backend sqlitevec
+
+<span class="token comment"># 技能</span>
+--skills-dirs skills --skills-watch
+
+<span class="token comment"># Admin</span>
+--admin-enabled --admin-addr <span class="token number">127.0</span>.0.1:19789
+
+<span class="token comment"># 对话</span>
+--add-session-summary --max-history-runs <span class="token number">50</span> --enable-context-compaction
+</code></pre><hr>
+<h2 id="插件开发指南">插件开发指南 </h2>
+<h3 id="开发自定义通道">开发自定义通道 </h3>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token keyword keyword-package">package</span> mychannel
+
+<span class="token keyword keyword-import">import</span> <span class="token punctuation">(</span>
+    <span class="token string">"context"</span>
+    occhannel <span class="token string">"gitlab.dw.group.cn/dw-go/dw-agent/dwclaw/channel"</span>
+    <span class="token string">"gitlab.dw.group.cn/dw-go/dw-agent/dwclaw/registry"</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword keyword-const">const</span> pluginType <span class="token operator">=</span> <span class="token string">"mychannel"</span>
+
+<span class="token keyword keyword-func">func</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-if">if</span> err <span class="token operator">:=</span> registry<span class="token punctuation">.</span><span class="token function">RegisterChannel</span><span class="token punctuation">(</span>pluginType<span class="token punctuation">,</span> newChannel<span class="token punctuation">)</span><span class="token punctuation">;</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        <span class="token function">panic</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-type">type</span> channel <span class="token keyword keyword-struct">struct</span> <span class="token punctuation">{</span>
+    id <span class="token builtin">string</span>
+    gw registry<span class="token punctuation">.</span>GatewayClient
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-func">func</span> <span class="token punctuation">(</span>c <span class="token operator">*</span>channel<span class="token punctuation">)</span> <span class="token function">ID</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token punctuation">{</span> <span class="token keyword keyword-return">return</span> c<span class="token punctuation">.</span>id <span class="token punctuation">}</span>
+
+<span class="token keyword keyword-func">func</span> <span class="token punctuation">(</span>c <span class="token operator">*</span>channel<span class="token punctuation">)</span> <span class="token function">Run</span><span class="token punctuation">(</span>ctx context<span class="token punctuation">.</span>Context<span class="token punctuation">)</span> <span class="token builtin">error</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 实现消息接收和发送</span>
+    <span class="token keyword keyword-return">return</span> <span class="token boolean">nil</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-func">func</span> <span class="token function">newChannel</span><span class="token punctuation">(</span>deps registry<span class="token punctuation">.</span>ChannelDeps<span class="token punctuation">,</span> spec registry<span class="token punctuation">.</span>PluginSpec<span class="token punctuation">)</span> <span class="token punctuation">(</span>occhannel<span class="token punctuation">.</span>Channel<span class="token punctuation">,</span> <span class="token builtin">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-return">return</span> <span class="token operator">&amp;</span>channel<span class="token punctuation">{</span>id<span class="token punctuation">:</span> pluginType<span class="token punctuation">,</span> gw<span class="token punctuation">:</span> deps<span class="token punctuation">.</span>Gateway<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token boolean">nil</span>
+<span class="token punctuation">}</span>
+</code></pre><h3 id="使用自定义通道">使用自定义通道 </h3>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token keyword keyword-package">package</span> main
+
+<span class="token keyword keyword-import">import</span> <span class="token punctuation">(</span>
+    <span class="token string">"os"</span>
+    <span class="token string">"gitlab.dw.group.cn/dw-go/dw-agent/dwclaw/app"</span>
+    <span class="token boolean">_</span> <span class="token string">"your/module/mychannel"</span>  <span class="token comment">// 匿名导入</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword keyword-func">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    os<span class="token punctuation">.</span><span class="token function">Exit</span><span class="token punctuation">(</span>app<span class="token punctuation">.</span><span class="token function">Main</span><span class="token punctuation">(</span>os<span class="token punctuation">.</span>Args<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre><h3 id="开发自定义工具">开发自定义工具 </h3>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token keyword keyword-func">func</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    registry<span class="token punctuation">.</span><span class="token function">RegisterToolProvider</span><span class="token punctuation">(</span><span class="token string">"mytool"</span><span class="token punctuation">,</span> newTools<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-func">func</span> <span class="token function">newTools</span><span class="token punctuation">(</span>deps registry<span class="token punctuation">.</span>ToolProviderDeps<span class="token punctuation">,</span> spec registry<span class="token punctuation">.</span>PluginSpec<span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span>tool<span class="token punctuation">.</span>Tool<span class="token punctuation">,</span> <span class="token builtin">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-return">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>tool<span class="token punctuation">.</span>Tool<span class="token punctuation">{</span> <span class="token comment">/* ... */</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token boolean">nil</span>
+<span class="token punctuation">}</span>
+</code></pre><h3 id="开发自定义模型">开发自定义模型 </h3>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token keyword keyword-func">func</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    registry<span class="token punctuation">.</span><span class="token function">RegisterModel</span><span class="token punctuation">(</span><span class="token string">"mymodel"</span><span class="token punctuation">,</span> newModel<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-func">func</span> <span class="token function">newModel</span><span class="token punctuation">(</span>spec registry<span class="token punctuation">.</span>ModelSpec<span class="token punctuation">)</span> <span class="token punctuation">(</span>model<span class="token punctuation">.</span>Model<span class="token punctuation">,</span> <span class="token builtin">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-return">return</span> <span class="token operator">&amp;</span>myModel<span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token boolean">nil</span>
+<span class="token punctuation">}</span>
+</code></pre><hr>
+<h2 id="gateway-api">Gateway API </h2>
+<h3 id="端点">端点 </h3>
+<table>
+<thead>
+<tr>
+<th>端点</th>
+<th>方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GET /healthz</code></td>
+<td>GET</td>
+<td>健康检查</td>
+</tr>
+<tr>
+<td><code>POST /v1/gateway/messages</code></td>
+<td>POST</td>
+<td>发送消息</td>
+</tr>
+<tr>
+<td><code>POST /v1/gateway/messages/stream</code></td>
+<td>POST</td>
+<td>SSE 流式响应</td>
+</tr>
+<tr>
+<td><code>GET /v1/gateway/status?request_id=...</code></td>
+<td>GET</td>
+<td>查询状态</td>
+</tr>
+<tr>
+<td><code>POST /v1/gateway/cancel</code></td>
+<td>POST</td>
+<td>取消请求</td>
+</tr>
+</tbody>
+</table>
+<h3 id="发送消息">发送消息 </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">curl</span> <span class="token parameter variable">-X</span> POST http://localhost:8080/v1/gateway/messages <span class="token punctuation">\</span>
+  <span class="token parameter variable">-H</span> <span class="token string">"Content-Type: application/json"</span> <span class="token punctuation">\</span>
+  <span class="token parameter variable">-d</span> <span class="token string">'{"channel":"http","from":"user1","text":"你好","thread":"default"}'</span>
+</code></pre><p>响应：</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+  <span class="token property">"request_id"</span><span class="token operator">:</span> <span class="token string">"uuid-xxx"</span><span class="token punctuation">,</span>
+  <span class="token property">"session_id"</span><span class="token operator">:</span> <span class="token string">"http:dm:user1"</span><span class="token punctuation">,</span>
+  <span class="token property">"reply"</span><span class="token operator">:</span> <span class="token string">"你好！有什么可以帮助你的？"</span><span class="token punctuation">,</span>
+  <span class="token property">"usage"</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">"prompt_tokens"</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token property">"completion_tokens"</span><span class="token operator">:</span> <span class="token number">15</span><span class="token punctuation">,</span> <span class="token property">"total_tokens"</span><span class="token operator">:</span> <span class="token number">25</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><h3 id="流式响应">流式响应 </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">curl</span> <span class="token parameter variable">-X</span> POST http://localhost:8080/v1/gateway/messages/stream <span class="token punctuation">\</span>
+  <span class="token parameter variable">-H</span> <span class="token string">"Content-Type: application/json"</span> <span class="token punctuation">\</span>
+  <span class="token parameter variable">-d</span> <span class="token string">'{"channel":"http","from":"user1","text":"写一首诗"}'</span>
+</code></pre><p>SSE 输出：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>event: run_started
+data: {"session_id":"http:dm:user1","request_id":"uuid-xxx"}
+
+event: progress
+data: {"stage":"preparing","summary":"Preparing request"}
+
+event: public_delta
+data: {"text":"春"}
+
+event: public_delta
+data: {"text":"风又绿江南岸"}
+
+event: progress
+data: {"stage":"answering","summary":"Preparing final answer"}
+
+event: run_completed
+data: {"reply":"春风又绿江南岸...","usage":{"total_tokens":50}}
+</code></pre><hr>
+<h2 id="监控与调试">监控与调试 </h2>
+<h3 id="langfuse-集成">Langfuse 集成 </h3>
+<pre data-role="codeBlock" data-info="yaml" class="language-yaml yaml"><code><span class="token key atrule">langfuse</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enabled</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">required</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">ui_base_url</span><span class="token punctuation">:</span> <span class="token string">"http://localhost:3000"</span>
+</code></pre><pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token builtin class-name">export</span> <span class="token assign-left variable">LANGFUSE_SECRET_KEY</span><span class="token operator">=</span>sk-xxx
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">LANGFUSE_PUBLIC_KEY</span><span class="token operator">=</span>pk-xxx
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">LANGFUSE_HOST</span><span class="token operator">=</span>http://localhost:3000
+</code></pre><h3 id="调试记录器">调试记录器 </h3>
+<pre data-role="codeBlock" data-info="yaml" class="language-yaml yaml"><code><span class="token key atrule">debug</span><span class="token punctuation">:</span>
+  <span class="token key atrule">recorder</span><span class="token punctuation">:</span>
+    <span class="token key atrule">enabled</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">dir</span><span class="token punctuation">:</span> <span class="token string">"debug"</span>
+    <span class="token key atrule">mode</span><span class="token punctuation">:</span> <span class="token string">"all"</span>
+</code></pre><h3 id="诊断命令">诊断命令 </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>dclaw doctor                    <span class="token comment"># 检查所有配置</span>
+dclaw doctor <span class="token parameter variable">--channel</span> telegram <span class="token comment"># 检查特定通道</span>
+</code></pre><hr>
+<h2 id="示例">示例 </h2>
+<h3 id="1-自定义发行版">1. 自定义发行版 </h3>
+<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token keyword keyword-package">package</span> main
+
+<span class="token keyword keyword-import">import</span> <span class="token punctuation">(</span>
+    <span class="token string">"os"</span>
+    <span class="token string">"gitlab.dw.group.cn/dw-go/dw-agent/dwclaw/app"</span>
+    <span class="token boolean">_</span> <span class="token string">"your/module/mychannel"</span>
+    <span class="token boolean">_</span> <span class="token string">"your/module/mytool"</span>
+    <span class="token boolean">_</span> <span class="token string">"your/module/mybackend"</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword keyword-func">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    os<span class="token punctuation">.</span><span class="token function">Exit</span><span class="token punctuation">(</span>app<span class="token punctuation">.</span><span class="token function">Main</span><span class="token punctuation">(</span>os<span class="token punctuation">.</span>Args<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre><h3 id="2-stdin-聊天">2. stdin 聊天 </h3>
+<p>参考 <a href="dclaw\examples\stdin_chat\main.go"><code>examples/stdin_chat/main.go</code></a></p>
+<h3 id="3-mcp-stdio-服务器">3. MCP stdio 服务器 </h3>
+<p>参考 <a href="dclaw\examples\mcp_stdio_server\main.go"><code>examples/mcp_stdio_server/main.go</code></a></p>
+<h3 id="4-a2a-子代理">4. A2A 子代理 </h3>
+<p>参考 <a href="dclaw\examples\a2a_subagent\main.go"><code>examples/a2a_subagent/main.go</code></a></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
